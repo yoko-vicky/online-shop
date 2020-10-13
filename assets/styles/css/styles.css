@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Gotham";
+  src: url("../../fonts/Gotham-Font/Gotham-Bold.otf") format("opentype"), url("../../fonts/Gotham-Font/GothamBold.ttf") format("truetype");
+  font-weight: 700; }
+
+@font-face {
+  font-family: "Gotham Rounded";
+  src: url("../../fonts/Gotham_Rounded_Light/Gotham-Rounded-Light.otf") format("opentype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Nimbus Sans Light";
+  src: url("../../fonts/Nimbus-Sans-D-OT-Light_32752.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Pragmatica Medium";
+  src: url("../../fonts/PragmaticaMedium.otf") format("opentype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Free Sans Bold";
+  src: url("../../fonts/Free-Sans/FreeSansBold.otf") format("opentype"), url("../../fonts/Free-Sans/FreeSansBold.ttf") format("truetype");
+  font-weight: 700; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+html {
+  font-size: 50%; }
+  @media only screen and (min-width: 768px) {
+    html {
+      font-size: 62.5%; } }
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Pragmatica Medium", sans-serif; }
+
+.text-center {
+  text-align: center !important; }
+
+.margin-bottom-sm {
+  margin-bottom: 2rem !important; }
+
+.margin-bottom-md {
+  margin-bottom: 3rem !important; }
+  @media only screen and (min-width: 768px) {
+    .margin-bottom-md {
+      margin-bottom: 4rem !important; } }
+
+.margin-bottom-lg {
+  margin-bottom: 5rem !important; }
+  @media only screen and (min-width: 768px) {
+    .margin-bottom-lg {
+      margin-bottom: 8rem !important; } }

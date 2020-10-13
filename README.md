@@ -84,6 +84,7 @@ Give a ⭐️ if you like this project!
 
 This project is [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/) licensed.
 
+<!-- The [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/) requires that you give appropriate credit to the author. Therefore, you must do it in the README of your project. -->
 
 ## Authors
 
@@ -101,7 +102,7 @@ This project is [Creative Commons license of the design](https://creativecommons
 
 
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+<!-- * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Pages](https://pages.github.com)
@@ -111,4 +112,15 @@ This project is [Creative Commons license of the design](https://creativecommons
 * [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
 * [Sticky Kit](http://leafo.net/sticky-kit)
 * [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
+* [Font Awesome](https://fontawesome.com) -->
+
+
+* [Gotham Font Family for personal use](https://freefontsfamily.com/gotham-font-family/)
+* [Gotham Rounded Light for personal use](https://fontsgeek.com/fonts/Gotham-Rounded-Light)
+* [Nimbus Sans Light (Using as a alternative font of Helvetica Neue Light) ](https://fontsup.com/font/nimbus-sans-d-ot-light.html)
+* [Pragmatica Medium (Using as a alternative font of Helvetica Neue Medium) ](https://www.fontsmarket.com/font-download/pragmatica-medium)
+* [Free Sans Bold (Using as a alternative font of Helvetica Neue Bold) ](https://www.dafontfree.io/helvetica-neue-font-free/)
+
+
+<!-- Helvetica Neue Light – [Nimbus Sans Light] -->
+<!-- Helvetica Neue Free Alternatives -->
