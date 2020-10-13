@@ -120,7 +120,10 @@ This project is [Creative Commons license of the design](https://creativecommons
 * [Nimbus Sans Light (Using as a alternative font of Helvetica Neue Light) ](https://fontsup.com/font/nimbus-sans-d-ot-light.html)
 * [Pragmatica Medium (Using as a alternative font of Helvetica Neue Medium) ](https://www.fontsmarket.com/font-download/pragmatica-medium)
 * [Free Sans Bold (Using as a alternative font of Helvetica Neue Bold) ](https://www.dafontfree.io/helvetica-neue-font-free/)
-
+* [pixabay](https://pixabay.com/)
+* [pexels](https://www.pexels.com/)
+* [rawpixel](https://www.rawpixel.com/)
+* [iconify](https://iconify.design/)
 
 <!-- Helvetica Neue Light – [Nimbus Sans Light] -->
 <!-- Helvetica Neue Free Alternatives -->
