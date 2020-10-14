@@ -3,13 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Shop</title>
+  <title>TOYZ Online Store</title>
   <!-- Normalize.css CDN -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
   <!-- Iconify -->
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" href="./assets/styles/css/styles.css">
 </head>
 <body>
+
+  <header class="main-header">
+    <a href="#" class="main-header__logo">
+      <span class="iconify" data-icon="uil:kid" data-inline="false"></span>
+      TOYZ
+    </a>
+    <nav class="main-header__nav">
+      <ul class="main-header__list">
+        <li class="main-header__item"><a href="#" class="main-header__link">Home</a></li>
+        <li class="main-header__item"><a href="#" class="main-header__link">Corrections</a></li>
+        <li class="main-header__item"><a href="#" class="main-header__link">Popular List</a></li>
+        <li class="main-header__item"><a href="#" class="main-header__link">Post an Ad</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="search-area">
+
+    </div>
+
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__container">
+      <div class="main-footer__element">
+        <a href="#" class="main-footer__logo">
+          <span class="iconify" data-icon="uil:kid" data-inline="false"></span>
+          TOYZ
+        </a>
+        <p class="main-footer__paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus vero possimus nihil, facilis aliquam omnis consequuntur eligendi doloribus praesentium, odit minus rem aperiam ipsum recusandae dolores sequi est. Quos, incidunt.
+        </p>
+      </div>
+      <div class="main-footer__element">
+        <h5 class="main-footer__title">Categories</h5>
+        <div class="main-footer__list__container">
+          <ul class="main-footer__list">
+            <li class="main-footer__item"><a href="#" class="main-footer__link">Arts & Crafts</a></li>
+            <li class="main-footer__item"><a href="#" class="main-footer__link">Baby & Toddler</a></li>
+            <li class="main-footer__item"><a href="#" class="main-footer__link">Collectibles</a></li>
+            <li class="main-footer__item"><a href="#" class="main-footer__link">Construction Toys</a></li>
+            <li class="main-footer__item"><a href="#" class="main-footer__link">Dolls & Dollhouses</a></li>
+            <li class="main-footer__item"><a href="#" class="main-footer__link">Fashion & Accessories</a></li>
+            <li class="main-footer__item"><a href="#" class="main-footer__link">Figures & Sets</a></li>
+          </ul>
+          <ul class="main-footer__list">
+            <li class="main-footer__item"><a href="#" class="main-footer__link">Games</a></li>
+            <li class="main-footer__item"><a href="#" class="main-footer__link">Home Learning</a></li>
+            <li class="main-footer__item"><a href="#" class="main-footer__link">Loot Bag Toys</a></li>
+            <li class="main-footer__item"><a href="#" class="main-footer__link">Musical Toys</a></li>
+            <li class="main-footer__item"><a href="#" class="main-footer__link">Outdoor & Active Play</a></li>
+            <li class="main-footer__item"><a href="#" class="main-footer__link">Puzzles & Brainteasers</a></li>
+            <li class="main-footer__item"><a href="#" class="main-footer__link">Trains & Vehicles</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-footer__element">
+        <h5 class="main-footer__title">Navigation</h5>
+        <div class="main-footer__list__container">
+          <ul class="main-footer__list">
+            <li class="main-footer__item"><a href="#" class="main-footer__link">Home</a></li>
+            <li class="main-footer__item"><a href="#" class="main-footer__link">Sign In</a></li>
+            <li class="main-footer__item"><a href="#" class="main-footer__link">Sign Up</a></li>
+            <li class="main-footer__item"><a href="#" class="main-footer__link">Terms & Conditions</a></li>
+            <li class="main-footer__item"><a href="#" class="main-footer__link">FAQ</a></li>
+            <li class="main-footer__item"><a href="#" class="main-footer__link">Help</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-footer__element">
+        <select name="country" id="country" class="main-footer__select">
+          <option value="us" class="main-footer__option">U.S.</option>
+          <option value="Sweden" class="main-footer__option">Sweden</option>
+          <option value="Sweden" class="main-footer__option">Italy</option>
+          <option value="Japan" class="main-footer__option">Japan</option>
+        </select>
+
+        <select name="language" id="language" class="main-footer__select">
+          <option value="us" class="main-footer__option">English</option>
+          <option value="Sweden" class="main-footer__option">Swedish</option>
+          <option value="Sweden" class="main-footer__option">Italy</option>
+          <option value="Japan" class="main-footer__option">Japanese</option>
+        </select>
+
+        <select name="currency" id="currency" class="main-footer__select">
+          <option value="Sweden" class="main-footer__option">USD</option>
+          <option value="Sweden" class="main-footer__option">SEK</option>
+          <option value="us" class="main-footer__option">EURO</option>
+          <option value="Japan" class="main-footer__option">YEN</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="copyright__main">
+        <small>Copyright &copy; 2020 Toyz.com. All Rights Reserved. Designed by <a href="https://github.com/yocosaka">Yoko Saka.</a></small>
+      </div>
+      <div class="copyright__sns">
+        <ul class="copyright__sns__list">
+          <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="entypo-social:instagram" data-inline="false"></span></a></li>
+          <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="bx:bxl-facebook" data-inline="false"></span></a></li>
+          <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="ant-design:twitter-outlined" data-inline="false"></span></a></li>
+          <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="ant-design:youtube-filled" data-inline="false"></span></a></li>
+          <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="bx:bxl-linkedin" data-inline="false"></span></a></li>
+
+
+        </ul>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
