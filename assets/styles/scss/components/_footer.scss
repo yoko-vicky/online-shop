@@ -1,0 +1,8 @@
+.main-footer {
+  background-color: azure;
+  // &__navigations {
+  // }
+  &__wrapper {
+    @include basicWidth;
+  }
+}

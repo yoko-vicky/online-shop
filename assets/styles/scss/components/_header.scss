@@ -1,0 +1,77 @@
+.main-header {
+  background-color: $black;
+  display: flex;
+  padding: 1rem;
+  font-family: $deco-font-light;
+  &__nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  &__list {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__item {
+    &:last-child {
+      display: none;
+    }
+  }
+  &__link {
+    text-transform: uppercase;
+    color: $white;
+    display: flex;
+    align-items: center;
+    .iconify {
+      margin-right: 0.5rem;
+      @include mq(xs) {
+        display: none;
+      }
+    }
+  }
+  &__user-info {
+    display: none;
+    @include mq(tab) {
+      display: flex;
+      align-items: center;
+      &__mail {
+        position: relative;
+        display: flex;
+        margin-right: 2rem;
+        .iconify {
+          color: $white;
+          font-size: 3rem;
+        }
+        .mail-num {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          color: $white;
+          background-color: $color-primary;
+          width: 1.3rem;
+          height: 1.3rem;
+          top: 0;
+          right: -0.5rem;
+          font-size: 1rem;
+        }
+      }
+      &__name {
+        color: $white;
+        margin-right: 2rem;
+      }
+      &__icon {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        overflow: hidden;
+        &-img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

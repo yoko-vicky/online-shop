@@ -1,15 +1,22 @@
-html {
-  font-size: 50%; // 1rem = 8px (8/16)
-  @include mq(tab) {
-    font-size: 62.5%; // 1rem = 10px (10/16)
-  }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 body {
   box-sizing: border-box;
-  font-family: $basic-font-normal;
 }
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
 }

@@ -8,118 +8,282 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
   <!-- Iconify -->
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/styles/css/styles.css">
 </head>
-<body>
+<body class="home">
 
   <header class="main-header">
-    <a href="#" class="main-header__logo">
-      <span class="iconify" data-icon="uil:kid" data-inline="false"></span>
+    <a href="#" class="main-header__logo heading-brand">
+      <span class="iconify" data-icon="cil:baby" data-inline="false"></span>
       TOYZ
     </a>
     <nav class="main-header__nav">
       <ul class="main-header__list">
-        <li class="main-header__item"><a href="#" class="main-header__link">Home</a></li>
-        <li class="main-header__item"><a href="#" class="main-header__link">Corrections</a></li>
-        <li class="main-header__item"><a href="#" class="main-header__link">Popular List</a></li>
+        <li class="main-header__item"><a href="#" class="main-header__link"><span class="iconify" data-icon="bx:bxs-home" data-inline="false"></span>Home</a></li>
+        <li class="main-header__item"><a href="#" class="main-header__link"><span class="iconify" data-icon="fa-solid:box-open" data-inline="false"></span>Corrections</a></li>
+        <li class="main-header__item"><a href="#" class="main-header__link"><span class="iconify" data-icon="fa-solid:shopping-cart" data-inline="false"></span>Cart</a></li>
         <li class="main-header__item"><a href="#" class="main-header__link">Post an Ad</a></li>
       </ul>
     </nav>
+    <div class="main-header__user-info">
+      <div class="main-header__user-info__mail">
+        <span class="iconify" data-icon="heroicons-solid:mail" data-inline="false"></span>
+        <span class="mail-num">5</span>
+      </div>
+      <div class="main-header__user-info__name">
+        <span>Hanako Yamada</span>
+      </div>
+      <div class="main-header__user-info__icon">
+        <img src="./assets/images/user.jpg" alt="User Icon" class="main-header__user-info__icon-img">
+      </div>
+    </div>
   </header>
   <main>
     <div class="search-area">
+      <div class="search-area__container">
+        <h1 class="search-area__heading heading">
+          <span class="search-area__heading--main heading-brand">TOYZ</span>
+          <span class="search-area__heading--sub">Buying And Selling Couldn't be Simpler than this!</span>
+         </h1>
+        <form action="#" class="search-area__form">
+          <select name="categories" id="" class="search-area__select">
+            <option value="arts_crafts">Arts & Crafts</option>
+            <option value="baby_toddler">Baby & Toddler</option>
+            <option value="collectibles">Collectibles</option>
+            <option value="construction_toys">Construction Toys</option>
+            <option value="dolls_dollhouses">Dolls & Dollhouses</option>
+            <option value="fashion_accessories">Fashion & Accessories</option>
+            <option value="figures_sets">Figures & Sets</option>
+            <option value="games">Games</option>
+            <option value="home_learning">Home Learning</option>
+            <option value="loot_bag_toys">Loot Bag Toys</option>
+            <option value="musical_toys">Musical Toys</option>
+            <option value="outdoor_active_play">Outdoor & Active Play</option>
+            <option value="puzzles_brainteasers">Puzzles & Brainteasers</option>
+            <option value="trains_vehicles">Trains & Vehicles</option>
+          </select>
+          <input type="text" placeholder="What do you search for?" class="search-area__input">
+          <input type="text" placeholder="Which brand do you want?" class="search-area__input">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
 
+    <section class="hot-ads" id="hot-ads">
+      <div class="hot-ads__container">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aperiam corporis sed officia itaque qui vel eos. Ipsam sit quidem accusantium eos saepe ratione necessitatibus corporis. Cupiditate eum minima sequi.</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="products">
+      <section class="products__section">
+        <div class="products__title">
+          <span class="iconify" data-icon="clarity:scissors-solid" data-inline="false"></span>
+          <h2 class="products__title--heading heading">Arts & Crafts</h2>
+          <p class="products__title--description">Art Supplies & Easels, Crafts & Activities Kits, Moulding & Sculpting Kits and Scrapbooking & Paper Craft Kits.</p>
+        </div>
+
+        <div class="swiper-container products__carousel">
+          <div class="swiper-wrapper products__carousel__wrapper">
+            <article class="swiper-slide products__carousel__article">
+              <figure class="products__carousel__figure">
+                <img src="./assets/images/toys/toys-001.jpg" alt="Arts & Crafts Toy" class="products__carousel__image">
+              </figure>
+              <div class="products__carousel__text">
+                <h3 class="products__carousel__heading heading">Pretty Mini Candy Machine Pretty Mini</h3>
+                <div class="products__carousel__status">New</div>
+                <div class="products__carousel__brand">ABC Toys</div>
+                <div class="products__carousel__foot">
+                  <div class="products__carousel__foot__btn-area">
+                    <div class="products__carousel__foot__btn-area__btn">
+                      <span class="iconify" data-icon="bx:bx-plus" data-inline="false"></span>
+                    </div>
+                    <div class="products__carousel__foot__btn-area__baloon">
+                      <ul class="products__carousel__foot__btn-area__baloon__list">
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            Add to Collection
+                          </a>
+                        </li>
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            Send a Message
+                          </a>
+                        </li>
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            More Details
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="products__carousel__foot__price">
+                    45$
+                  </div>
+                </div>
+              </div>
+            </article>
+
+
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+      </section>
     </div>
 
   </main>
   <footer class="main-footer">
-    <div class="main-footer__container">
-      <div class="main-footer__element">
-        <a href="#" class="main-footer__logo">
-          <span class="iconify" data-icon="uil:kid" data-inline="false"></span>
-          TOYZ
-        </a>
-        <p class="main-footer__paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus vero possimus nihil, facilis aliquam omnis consequuntur eligendi doloribus praesentium, odit minus rem aperiam ipsum recusandae dolores sequi est. Quos, incidunt.
-        </p>
-      </div>
-      <div class="main-footer__element">
-        <h5 class="main-footer__title">Categories</h5>
-        <div class="main-footer__list__container">
-          <ul class="main-footer__list">
-            <li class="main-footer__item"><a href="#" class="main-footer__link">Arts & Crafts</a></li>
-            <li class="main-footer__item"><a href="#" class="main-footer__link">Baby & Toddler</a></li>
-            <li class="main-footer__item"><a href="#" class="main-footer__link">Collectibles</a></li>
-            <li class="main-footer__item"><a href="#" class="main-footer__link">Construction Toys</a></li>
-            <li class="main-footer__item"><a href="#" class="main-footer__link">Dolls & Dollhouses</a></li>
-            <li class="main-footer__item"><a href="#" class="main-footer__link">Fashion & Accessories</a></li>
-            <li class="main-footer__item"><a href="#" class="main-footer__link">Figures & Sets</a></li>
-          </ul>
-          <ul class="main-footer__list">
-            <li class="main-footer__item"><a href="#" class="main-footer__link">Games</a></li>
-            <li class="main-footer__item"><a href="#" class="main-footer__link">Home Learning</a></li>
-            <li class="main-footer__item"><a href="#" class="main-footer__link">Loot Bag Toys</a></li>
-            <li class="main-footer__item"><a href="#" class="main-footer__link">Musical Toys</a></li>
-            <li class="main-footer__item"><a href="#" class="main-footer__link">Outdoor & Active Play</a></li>
-            <li class="main-footer__item"><a href="#" class="main-footer__link">Puzzles & Brainteasers</a></li>
-            <li class="main-footer__item"><a href="#" class="main-footer__link">Trains & Vehicles</a></li>
-          </ul>
+    <div class="main-footer__navigations">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__element">
+          <a href="#" class="main-footer__logo heading-brand">
+            <span class="iconify" data-icon="cil:baby" data-inline="false"></span>
+            TOYZ
+          </a>
+          <p class="main-footer__paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus vero possimus nihil, facilis aliquam omnis consequuntur eligendi doloribus praesentium, odit minus rem aperiam ipsum recusandae dolores sequi est. Quos, incidunt.
+                </p>
         </div>
-      </div>
-      <div class="main-footer__element">
-        <h5 class="main-footer__title">Navigation</h5>
-        <div class="main-footer__list__container">
-          <ul class="main-footer__list">
-            <li class="main-footer__item"><a href="#" class="main-footer__link">Home</a></li>
-            <li class="main-footer__item"><a href="#" class="main-footer__link">Sign In</a></li>
-            <li class="main-footer__item"><a href="#" class="main-footer__link">Sign Up</a></li>
-            <li class="main-footer__item"><a href="#" class="main-footer__link">Terms & Conditions</a></li>
-            <li class="main-footer__item"><a href="#" class="main-footer__link">FAQ</a></li>
-            <li class="main-footer__item"><a href="#" class="main-footer__link">Help</a></li>
-          </ul>
+        <div class="main-footer__element">
+          <h5 class="main-footer__title">Categories</h5>
+          <div class="main-footer__list__container">
+            <ul class="main-footer__list">
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Arts & Crafts</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Baby & Toddler</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Collectibles</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Construction Toys</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Dolls & Dollhouses</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Fashion & Accessories</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Figures & Sets</a></li>
+            </ul>
+            <ul class="main-footer__list">
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Games</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Home Learning</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Loot Bag Toys</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Musical Toys</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Outdoor & Active Play</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Puzzles & Brainteasers</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Trains & Vehicles</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="main-footer__element">
-        <select name="country" id="country" class="main-footer__select">
-          <option value="us" class="main-footer__option">U.S.</option>
-          <option value="Sweden" class="main-footer__option">Sweden</option>
-          <option value="Sweden" class="main-footer__option">Italy</option>
-          <option value="Japan" class="main-footer__option">Japan</option>
-        </select>
+        <div class="main-footer__element">
+          <h5 class="main-footer__title">Navigation</h5>
+          <div class="main-footer__list__container">
+            <ul class="main-footer__list">
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Home</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Sign In</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Sign Up</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Terms & Conditions</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">FAQ</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Help</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-footer__element">
+          <select name="country" id="country" class="main-footer__select">
+            <option value="us" class="main-footer__option">U.S.</option>
+            <option value="Sweden" class="main-footer__option">Sweden</option>
+            <option value="Sweden" class="main-footer__option">Italy</option>
+            <option value="Japan" class="main-footer__option">Japan</option>
+          </select>
 
-        <select name="language" id="language" class="main-footer__select">
-          <option value="us" class="main-footer__option">English</option>
-          <option value="Sweden" class="main-footer__option">Swedish</option>
-          <option value="Sweden" class="main-footer__option">Italy</option>
-          <option value="Japan" class="main-footer__option">Japanese</option>
-        </select>
+          <select name="language" id="language" class="main-footer__select">
+            <option value="us" class="main-footer__option">English</option>
+            <option value="Sweden" class="main-footer__option">Swedish</option>
+            <option value="Sweden" class="main-footer__option">Italy</option>
+            <option value="Japan" class="main-footer__option">Japanese</option>
+          </select>
 
-        <select name="currency" id="currency" class="main-footer__select">
-          <option value="Sweden" class="main-footer__option">USD</option>
-          <option value="Sweden" class="main-footer__option">SEK</option>
-          <option value="us" class="main-footer__option">EURO</option>
-          <option value="Japan" class="main-footer__option">YEN</option>
-        </select>
+          <select name="currency" id="currency" class="main-footer__select">
+            <option value="Sweden" class="main-footer__option">USD</option>
+            <option value="Sweden" class="main-footer__option">SEK</option>
+            <option value="us" class="main-footer__option">EURO</option>
+            <option value="Japan" class="main-footer__option">YEN</option>
+          </select>
+        </div>
       </div>
     </div>
 
     <div class="copyright">
-      <div class="copyright__main">
-        <small>Copyright &copy; 2020 Toyz.com. All Rights Reserved. Designed by <a href="https://github.com/yocosaka">Yoko Saka.</a></small>
-      </div>
-      <div class="copyright__sns">
-        <ul class="copyright__sns__list">
-          <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="entypo-social:instagram" data-inline="false"></span></a></li>
-          <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="bx:bxl-facebook" data-inline="false"></span></a></li>
-          <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="ant-design:twitter-outlined" data-inline="false"></span></a></li>
-          <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="ant-design:youtube-filled" data-inline="false"></span></a></li>
-          <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="bx:bxl-linkedin" data-inline="false"></span></a></li>
-
-
-        </ul>
+      <div class="main-footer__wrapper">
+        <div class="copyright__main">
+          <small>Copyright &copy; 2020 Toyz.com. All Rights Reserved. Designed by <a href="https://github.com/yocosaka">Yoko Saka.</a></small>
+        </div>
+        <div class="copyright__sns">
+          <ul class="copyright__sns__list">
+            <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="entypo-social:instagram" data-inline="false"></span></a></li>
+            <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="bx:bxl-facebook" data-inline="false"></span></a></li>
+            <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="ant-design:twitter-outlined" data-inline="false"></span></a></li>
+            <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="ant-design:youtube-filled" data-inline="false"></span></a></li>
+            <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="bx:bxl-linkedin" data-inline="false"></span></a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('#hot-ads .swiper-container', {
+      cssMode: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination'
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+
+    var swiper = new Swiper('.products__carousel.swiper-container', {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      freeMode: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      }
+    });
+  </script>
 </body>
 </html>

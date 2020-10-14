@@ -13,10 +13,21 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin basicWidth {
+    width: $basic-width;
+    max-width: $basic-max-width;
+    margin: 0 auto;
+}
+
 // MEDIA QUERY setting
 @mixin mq($breakpoint) {
     @if $breakpoint == tab {
         @media only screen and (min-width: 768px) {
+            @content;
+        }
+    }
+    @if $breakpoint == xs {
+        @media only screen and (max-width: 420px) {
             @content;
         }
     }
