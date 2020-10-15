@@ -3,9 +3,12 @@
   background-color: $light-grey-2;
   &__section {
     padding: 3rem 0 4rem 0;
+    max-width: 120rem;
+    margin: 0 auto;
   }
   &__title {
-    @include basicWidth;
+    width: 94%;
+    margin: 0 auto;
     border-bottom: 1px solid $light-grey-1;
     margin-bottom: 3rem;
     @include mq(tab) {
@@ -36,7 +39,7 @@
   &__carousel {
     position: relative;
     &__wrapper {
-      max-width: 90%;
+      width: 90%;
       margin: 0 auto;
       @include mq(mob) {
         display: grid;
@@ -45,8 +48,11 @@
       }
       @include mq(tab) {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-gap: 2rem;
+      }
+      @include mq(laptap) {
+        grid-template-columns: repeat(5, 1fr);
       }
     }
     &__arrows {
@@ -61,6 +67,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 0;
         &__link {
           height: 100%;
           width: 3rem;
@@ -87,14 +94,22 @@
       border: 1px solid $light-grey-1;
       background-color: $white;
       margin-bottom: 3rem;
+      position: relative;
+      z-index: 1;
       @include mq(mob) {
         margin-bottom: 0;
       }
       @include mq(tab) {
+        &:nth-child(5),
         &:nth-child(6),
         &:nth-child(7),
         &:nth-child(8) {
           display: none;
+        }
+      }
+      @include mq(laptap) {
+        &:nth-child(5) {
+          display: block;
         }
       }
     }
@@ -103,6 +118,15 @@
       margin: 0;
       overflow: hidden;
       height: 50%;
+      @include mq(mob) {
+        height: 24rem;
+      }
+      @include mq(tab) {
+        height: 10rem;
+      }
+      @include mq(laptap) {
+        height: 14rem;
+      }
     }
     &__text {
       padding: 1rem;
@@ -125,6 +149,7 @@
       font-size: 1.3rem;
     }
     &__foot {
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -139,6 +164,7 @@
           justify-content: center;
           align-items: center;
           color: $grey;
+          cursor: pointer;
         }
         &__baloon {
           display: none;
@@ -182,6 +208,8 @@
       }
       &__price {
         color: $color-primary;
+        font-size: 1.7rem;
+        font-family: $basic-font-bold;
       }
     }
   }

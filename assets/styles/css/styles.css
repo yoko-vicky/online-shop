@@ -241,10 +241,11 @@ button {
         align-items: center; }
         .main-header__user-info__mail {
           position: relative;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
           margin-right: 2rem; }
+          .main-header__user-info__mail a {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
           .main-header__user-info__mail .iconify {
             color: #fff;
             font-size: 3rem; }
@@ -266,7 +267,7 @@ button {
             top: 0;
             right: -0.5rem;
             font-size: 1rem; }
-        .main-header__user-info__name {
+        .main-header__user-info__name a {
           color: #fff;
           margin-right: 2rem;
           font-size: 1.3rem; }
@@ -275,7 +276,7 @@ button {
           height: 4rem;
           border-radius: 50%;
           overflow: hidden; }
-          .main-header__user-info__icon-img {
+          .main-header__user-info__icon--img {
             width: 100%;
             -o-object-fit: cover;
             object-fit: cover; } }
@@ -401,6 +402,9 @@ button {
   border-top: 1px solid #ccc;
   padding: 2.4rem 0; }
   @media only screen and (min-width: 768px) {
+    .copyright {
+      padding: 1rem 0; } }
+  @media only screen and (min-width: 768px) {
     .copyright .main-footer__wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -418,7 +422,8 @@ button {
     margin-bottom: 1rem; }
     @media only screen and (min-width: 768px) {
       .copyright__main {
-        margin: 0; } }
+        margin: 0;
+        font-size: 1.2rem; } }
     .copyright__main a {
       color: inherit; }
   .copyright__sns {
@@ -453,7 +458,7 @@ button {
           font-size: 3rem; }
         @media only screen and (min-width: 768px) {
           .copyright__sns__link .iconify {
-            font-size: 3rem; }
+            font-size: 2.7rem; }
             .copyright__sns__link .iconify.instagram {
               font-size: 2.4rem; } }
 
@@ -647,10 +652,11 @@ button {
   width: 100%;
   background-color: #f6f6f6; }
   .products__section {
-    padding: 3rem 0 4rem 0; }
+    padding: 3rem 0 4rem 0;
+    max-width: 120rem;
+    margin: 0 auto; }
   .products__title {
     width: 94%;
-    max-width: 120rem;
     margin: 0 auto;
     border-bottom: 1px solid #ccc;
     margin-bottom: 3rem; }
@@ -685,7 +691,7 @@ button {
   .products__carousel {
     position: relative; }
     .products__carousel__wrapper {
-      max-width: 90%;
+      width: 90%;
       margin: 0 auto; }
       @media only screen and (min-width: 425px) {
         .products__carousel__wrapper {
@@ -698,9 +704,13 @@ button {
         .products__carousel__wrapper {
           display: -ms-grid;
           display: grid;
-          -ms-grid-columns: (1fr)[5];
-          grid-template-columns: repeat(5, 1fr);
+          -ms-grid-columns: (1fr)[4];
+          grid-template-columns: repeat(4, 1fr);
           grid-gap: 2rem; } }
+      @media only screen and (min-width: 960px) {
+        .products__carousel__wrapper {
+          -ms-grid-columns: (1fr)[5];
+          grid-template-columns: repeat(5, 1fr); } }
     .products__carousel__arrows {
       display: none; }
       @media only screen and (min-width: 768px) {
@@ -719,7 +729,8 @@ button {
           justify-content: space-between;
           -webkit-box-align: center;
           -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+          z-index: 0; }
           .products__carousel__arrows__link {
             height: 100%;
             width: 3rem;
@@ -748,18 +759,32 @@ button {
       margin-top: 0;
       border: 1px solid #ccc;
       background-color: #fff;
-      margin-bottom: 3rem; }
+      margin-bottom: 3rem;
+      position: relative;
+      z-index: 1; }
       @media only screen and (min-width: 425px) {
         .products__carousel__article {
           margin-bottom: 0; } }
       @media only screen and (min-width: 768px) {
-        .products__carousel__article:nth-child(6), .products__carousel__article:nth-child(7), .products__carousel__article:nth-child(8) {
+        .products__carousel__article:nth-child(5), .products__carousel__article:nth-child(6), .products__carousel__article:nth-child(7), .products__carousel__article:nth-child(8) {
           display: none; } }
+      @media only screen and (min-width: 960px) {
+        .products__carousel__article:nth-child(5) {
+          display: block; } }
     .products__carousel__figure {
       padding: 0;
       margin: 0;
       overflow: hidden;
       height: 50%; }
+      @media only screen and (min-width: 425px) {
+        .products__carousel__figure {
+          height: 24rem; } }
+      @media only screen and (min-width: 768px) {
+        .products__carousel__figure {
+          height: 10rem; } }
+      @media only screen and (min-width: 960px) {
+        .products__carousel__figure {
+          height: 14rem; } }
     .products__carousel__text {
       padding: 1rem; }
     .products__carousel__image {
@@ -777,6 +802,7 @@ button {
     .products__carousel__brand {
       font-size: 1.3rem; }
     .products__carousel__foot {
+      width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -802,7 +828,8 @@ button {
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center;
-          color: #777; }
+          color: #777;
+          cursor: pointer; }
         .products__carousel__foot__btn-area__baloon {
           display: none;
           background-color: #fff;
@@ -842,4 +869,6 @@ button {
               background-color: #383838;
               color: #fff; }
       .products__carousel__foot__price {
-        color: #d35266; }
+        color: #d35266;
+        font-size: 1.7rem;
+        font-family: "Free Sans Bold", sans-serif; }

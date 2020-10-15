@@ -70,8 +70,10 @@
       align-items: center;
       &__mail {
         position: relative;
-        display: flex;
         margin-right: 2rem;
+        a {
+          display: flex;
+        }
         .iconify {
           color: $white;
           font-size: 3rem;
@@ -91,16 +93,18 @@
         }
       }
       &__name {
-        color: $white;
-        margin-right: 2rem;
-        font-size: 1.3rem;
+        a {
+          color: $white;
+          margin-right: 2rem;
+          font-size: 1.3rem;
+        }
       }
       &__icon {
         width: 4rem;
         height: 4rem;
         border-radius: 50%;
         overflow: hidden;
-        &-img {
+        &--img {
           width: 100%;
           object-fit: cover;
         }
