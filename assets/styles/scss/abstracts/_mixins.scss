@@ -31,6 +31,11 @@
             @content;
         }
     }
+    @if $breakpoint == laptap {
+        @media only screen and (min-width: 960px) {
+            @content;
+        }
+    }
     @if $breakpoint == xs {
         @media only screen and (max-width: 420px) {
             @content;

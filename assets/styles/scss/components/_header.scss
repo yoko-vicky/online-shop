@@ -1,7 +1,12 @@
 .main-header {
   background-color: $black;
-  display: flex;
-  padding: 1rem;
+  &__container {
+    display: flex;
+    @include basicWidth;
+    padding: 1rem 0;
+    @include mq(tab) {
+    }
+  }
   &__nav {
     flex: 1;
     display: flex;
@@ -11,12 +16,32 @@
   &__list {
     flex: 1;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+
+    @include mq(xs) {
+      justify-content: space-around;
+    }
+    @include mq(tab) {
+      justify-content: space-evenly;
+    }
+    @include mq(laptap) {
+      justify-content: flex-start;
+    }
   }
   &__item {
     &:last-child {
       display: none;
+    }
+    @include mq(tab) {
+      &:not(:last-child) {
+        margin: 0 1rem;
+      }
+      &:last-child {
+        display: block;
+        background-color: $color-primary;
+        margin-left: 2rem;
+        border-radius: 3px;
+      }
     }
   }
   &__link {
@@ -24,6 +49,13 @@
     color: $white;
     display: flex;
     align-items: center;
+    padding: 1rem;
+    @include mq(xs) {
+      padding: 0;
+    }
+    @include mq(tab) {
+      font-size: 1.3rem;
+    }
     .iconify {
       margin-right: 0.5rem;
       @include mq(xs) {
@@ -33,7 +65,7 @@
   }
   &__user-info {
     display: none;
-    @include mq(tab) {
+    @include mq(laptap) {
       display: flex;
       align-items: center;
       &__mail {
@@ -61,6 +93,7 @@
       &__name {
         color: $white;
         margin-right: 2rem;
+        font-size: 1.3rem;
       }
       &__icon {
         width: 4rem;

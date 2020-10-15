@@ -1,8 +1,169 @@
 .main-footer {
-  background-color: azure;
-  // &__navigations {
-  // }
+  background-color: $white;
+  padding-top: 5rem;
+  border-top: 1px solid $light-grey-1;
+  @include mq(tab) {
+    padding-top: 2rem;
+  }
+  &__navigations {
+    margin-bottom: 3rem;
+  }
   &__wrapper {
     @include basicWidth;
+    @include mq(tab) {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr 1fr;
+      grid-gap: 3rem;
+    }
+    @include mq(laptap) {
+      grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
+      grid-gap: 6rem;
+    }
+  }
+  &__element {
+    margin-bottom: 3rem;
+    @include mq(tab) {
+      margin: 0;
+    }
+  }
+  &__selects {
+    display: flex;
+    flex-direction: column;
+    @include mq(tab) {
+      padding-top: 4.3rem;
+    }
+    &__item {
+      position: relative;
+      @include mq(tab) {
+        display: grid;
+        grid-template-columns: 10rem minmax(10rem, 2fr);
+        align-items: center;
+      }
+      .main-footer__title {
+        border-bottom: none;
+        padding: 0;
+        @include mq(tab) {
+          margin: 0 1rem 0 0;
+          text-align: right;
+        }
+      }
+      &__select {
+        width: 100%;
+        border: 1px solid $light-grey-1;
+        border-radius: 3px;
+        font-size: 1.8rem;
+        @include mq(tab) {
+          font-size: 1.5rem;
+        }
+      }
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  &__logo {
+    color: $grey;
+    justify-content: center;
+    margin: 0 0 1.5rem;
+    @include mq(tab) {
+      margin: 0 0 2rem;
+    }
+    .iconify {
+      font-size: 6rem;
+      color: $grey;
+      @include mq(tab) {
+        font-size: 4rem;
+      }
+    }
+  }
+  &__title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: $color-primary;
+    font-family: $basic-font-bold;
+    border-bottom: 1px solid $color-primary;
+    padding: 1rem 0;
+    margin: 0 auto 1rem;
+    @include mq(tab) {
+      font-size: 1.3rem;
+    }
+  }
+  &__paragraph {
+    color: $grey;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    word-break: break-all;
+  }
+  &__list__container {
+    display: flex;
+  }
+  &__list {
+    flex: 1;
+  }
+  &__item {
+  }
+  &__link {
+    display: block;
+    font-size: 1.8rem;
+    color: $grey;
+    padding: 0.5rem 0;
+    @include mq(tab) {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.copyright {
+  border-top: 1px solid $light-grey-1;
+  padding: 2.4rem 0;
+  .main-footer__wrapper {
+    @include mq(tab) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__main {
+    width: 100%;
+    line-height: 1.3;
+    color: $grey;
+    margin-bottom: 1rem;
+    @include mq(tab) {
+      margin: 0;
+    }
+    a {
+      color: inherit;
+    }
+  }
+  &__sns {
+    max-width: 30rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    @include mq(tab) {
+      max-width: 24rem;
+    }
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__link {
+      display: flex;
+      align-items: center;
+      .iconify {
+        font-size: 3.6rem;
+        color: $grey;
+        &.instagram {
+          font-size: 3rem;
+        }
+        @include mq(tab) {
+          font-size: 3rem;
+          &.instagram {
+            font-size: 2.4rem;
+          }
+        }
+      }
+    }
   }
 }

@@ -14,28 +14,30 @@
 <body class="home">
 
   <header class="main-header">
-    <a href="#" class="main-header__logo heading-brand">
-      <span class="iconify" data-icon="cil:baby" data-inline="false"></span>
-      TOYZ
-    </a>
-    <nav class="main-header__nav">
-      <ul class="main-header__list">
-        <li class="main-header__item"><a href="#" class="main-header__link"><span class="iconify" data-icon="bx:bxs-home" data-inline="false"></span>Home</a></li>
-        <li class="main-header__item"><a href="#" class="main-header__link"><span class="iconify" data-icon="fa-solid:box-open" data-inline="false"></span>Corrections</a></li>
-        <li class="main-header__item"><a href="#" class="main-header__link"><span class="iconify" data-icon="fa-solid:shopping-cart" data-inline="false"></span>Cart</a></li>
-        <li class="main-header__item"><a href="#" class="main-header__link">Post an Ad</a></li>
-      </ul>
-    </nav>
-    <div class="main-header__user-info">
-      <div class="main-header__user-info__mail">
-        <span class="iconify" data-icon="heroicons-solid:mail" data-inline="false"></span>
-        <span class="mail-num">5</span>
-      </div>
-      <div class="main-header__user-info__name">
-        <span>Hanako Yamada</span>
-      </div>
-      <div class="main-header__user-info__icon">
-        <img src="./assets/images/user.jpg" alt="User Icon" class="main-header__user-info__icon-img">
+    <div class="main-header__container">
+      <a href="#" class="main-header__logo heading-brand">
+        <span class="iconify" data-icon="cil:baby" data-inline="false"></span>
+        TOYZ
+      </a>
+      <nav class="main-header__nav">
+        <ul class="main-header__list">
+          <li class="main-header__item"><a href="#" class="main-header__link"><span class="iconify" data-icon="bx:bxs-home" data-inline="false"></span>Home</a></li>
+          <li class="main-header__item"><a href="#" class="main-header__link"><span class="iconify" data-icon="fa-solid:box-open" data-inline="false"></span>Corrections</a></li>
+          <li class="main-header__item"><a href="#" class="main-header__link"><span class="iconify" data-icon="fa-solid:shopping-cart" data-inline="false"></span>Cart</a></li>
+          <li class="main-header__item"><a href="#" class="main-header__link">Post an Ad</a></li>
+        </ul>
+      </nav>
+      <div class="main-header__user-info">
+        <div class="main-header__user-info__mail">
+          <span class="iconify" data-icon="heroicons-solid:mail" data-inline="false"></span>
+          <span class="mail-num">5</span>
+        </div>
+        <div class="main-header__user-info__name">
+          <span>Hanako Yamada</span>
+        </div>
+        <div class="main-header__user-info__icon">
+          <img src="./assets/images/user.jpg" alt="User Icon" class="main-header__user-info__icon-img">
+        </div>
       </div>
     </div>
   </header>
@@ -65,7 +67,7 @@
           </select>
           <input type="text" placeholder="What do you search for?" class="search-area__input">
           <input type="text" placeholder="Which brand do you want?" class="search-area__input">
-          <button type="submit">Search</button>
+          <button type="submit" class="search-area__button">Search</button>
         </form>
       </div>
     </div>
@@ -82,8 +84,8 @@
             </div>
           </figure>
           <div class="hot-ads__text">
-            <h3 class="hot-ads__title margin-bottom-sm">Title Toys TitleToys Title Toys Title Toys Title</h3>
-            <p class="hot-ads__paragraph margin-bottom-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda pariatur, eveniet iure quam a, earum corporis natus delectus nulla repellat quas! Iusto repellendus quo in quia provident, aspernatur.</p>
+            <h3 class="hot-ads__title margin-bottom-sm">Title Toys TitleToys Title Toys</h3>
+            <p class="hot-ads__paragraph margin-bottom-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda pariatur, eveniet iure quam a, earum corporis natus delectus nulla repellat quas!</p>
             <div class="hot-ads__atb margin-bottom-md">
               <p class="hot-ads__atb--author">By: <span class="deco-light">John Doe</span></p>
               <p class="hot-ads__atb--brand">Brand: <span class="deco-light">ABC Toys</span></p>
@@ -451,7 +453,7 @@
               <li class="main-footer__item"><a href="#" class="main-footer__link">Arts & Crafts</a></li>
               <li class="main-footer__item"><a href="#" class="main-footer__link">Baby & Toddler</a></li>
               <li class="main-footer__item"><a href="#" class="main-footer__link">Collectibles</a></li>
-              <li class="main-footer__item"><a href="#" class="main-footer__link">Construction Toys</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Construction</a></li>
               <li class="main-footer__item"><a href="#" class="main-footer__link">Dolls & Dollhouses</a></li>
               <li class="main-footer__item"><a href="#" class="main-footer__link">Fashion & Accessories</a></li>
               <li class="main-footer__item"><a href="#" class="main-footer__link">Figures & Sets</a></li>
@@ -480,27 +482,37 @@
             </ul>
           </div>
         </div>
-        <div class="main-footer__element">
-          <select name="country" id="country" class="main-footer__select">
-            <option value="us" class="main-footer__option">U.S.</option>
-            <option value="Sweden" class="main-footer__option">Sweden</option>
-            <option value="Sweden" class="main-footer__option">Italy</option>
-            <option value="Japan" class="main-footer__option">Japan</option>
-          </select>
+        <div class="main-footer__element main-footer__selects">
 
-          <select name="language" id="language" class="main-footer__select">
-            <option value="us" class="main-footer__option">English</option>
-            <option value="Sweden" class="main-footer__option">Swedish</option>
-            <option value="Sweden" class="main-footer__option">Italy</option>
-            <option value="Japan" class="main-footer__option">Japanese</option>
-          </select>
+          <div class="main-footer__selects__item">
+            <h5 class="main-footer__title">Country</h5>
+            <select name="country" id="country" class="main-footer__selects__item__select">
+              <option value="us" class="main-footer__option">U.S.</option>
+              <option value="Sweden" class="main-footer__option">Sweden</option>
+              <option value="Sweden" class="main-footer__option">Italy</option>
+              <option value="Japan" class="main-footer__option">Japan</option>
+            </select>
+          </div>
 
-          <select name="currency" id="currency" class="main-footer__select">
-            <option value="Sweden" class="main-footer__option">USD</option>
-            <option value="Sweden" class="main-footer__option">SEK</option>
-            <option value="us" class="main-footer__option">EURO</option>
-            <option value="Japan" class="main-footer__option">YEN</option>
-          </select>
+          <div class="main-footer__selects__item">
+            <h5 class="main-footer__title">Language</h5>
+            <select name="language" id="language" class="main-footer__selects__item__select">
+              <option value="us" class="main-footer__option">English</option>
+              <option value="Sweden" class="main-footer__option">Swedish</option>
+              <option value="Sweden" class="main-footer__option">Italy</option>
+              <option value="Japan" class="main-footer__option">Japanese</option>
+            </select>
+          </div>
+
+          <div class="main-footer__selects__item">
+            <h5 class="main-footer__title">Currency</h5>
+            <select name="currency" id="currency" class="main-footer__selects__item__select">
+              <option value="Sweden" class="main-footer__option">USD</option>
+              <option value="Sweden" class="main-footer__option">SEK</option>
+              <option value="us" class="main-footer__option">EURO</option>
+              <option value="Japan" class="main-footer__option">YEN</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>
@@ -508,15 +520,15 @@
     <div class="copyright">
       <div class="main-footer__wrapper">
         <div class="copyright__main">
-          <small>Copyright &copy; 2020 Toyz.com. All Rights Reserved. Designed by <a href="https://github.com/yocosaka">Yoko Saka.</a></small>
+          Copyright &copy; 2020 Toyz.com. All Rights Reserved. Designed by <a href="https://github.com/yocosaka">Yoko Saka.</a>
         </div>
         <div class="copyright__sns">
           <ul class="copyright__sns__list">
-            <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="entypo-social:instagram" data-inline="false"></span></a></li>
             <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="bx:bxl-facebook" data-inline="false"></span></a></li>
             <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="ant-design:twitter-outlined" data-inline="false"></span></a></li>
             <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="ant-design:youtube-filled" data-inline="false"></span></a></li>
-            <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="bx:bxl-linkedin" data-inline="false"></span></a></li>
+            <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify instagram" data-icon="entypo-social:instagram" data-inline="false"></span></a></li>
+            <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify linkedin" data-icon="bx:bxl-linkedin" data-inline="false"></span></a></li>
           </ul>
         </div>
       </div>
