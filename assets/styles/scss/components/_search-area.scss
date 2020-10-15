@@ -1,13 +1,13 @@
 .search-area {
   background-color: $color-primary;
   padding: 6rem 0 4rem 0;
-  font-family: $deco-font-light;
   &__container {
     @include basicWidth;
   }
   &__heading {
     margin: 0 auto 5rem;
     text-align: center;
+    font-family: $deco-font-light;
     &--main {
       display: block;
       font-size: 5rem;

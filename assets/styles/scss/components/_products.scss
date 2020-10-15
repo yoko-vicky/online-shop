@@ -1,10 +1,14 @@
+.products {
+  width: 100%;
+}
+
 .products__carousel {
-  width: 85%;
-  overflow: visible;
+  width: 80%;
   &__article {
     display: block;
-    height: 28rem;
+    height: auto;
     text-align: left;
+    margin-top: 0;
   }
   &__figure {
     padding: 0;
@@ -91,12 +95,5 @@
     &__price {
       color: $color-primary;
     }
-  }
-
-  .swiper-button-next {
-    right: -1rem;
-  }
-  .swiper-button-prev {
-    left: -1rem;
   }
 }

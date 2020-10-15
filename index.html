@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
   <!-- Iconify -->
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/styles/css/styles.css">
 </head>
@@ -72,25 +70,34 @@
       </div>
     </div>
 
-    <section class="hot-ads" id="hot-ads">
+    <section class="hot-ads">
       <div class="hot-ads__container">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aperiam corporis sed officia itaque qui vel eos. Ipsam sit quidem accusantium eos saepe ratione necessitatibus corporis. Cupiditate eum minima sequi.</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-            <div class="swiper-slide">Slide 10</div>
+        <h2 class="hot-ads__heading heading margin-bottom-sm">Hot Ads</h2>
+        <div class="hot-ads__wrapper">
+          <figure class="hot-ads__figure margin-bottom-sm">
+            <img src="./assets/images/toys/toys-040.jpg" class="hot-ads__image" alt="Hot Ads Image">
+            <div class="hot-ads__figure__arrows">
+              <a href="#" class="hot-ads__figure__arrows__link"><span class="iconify" data-icon="ant-design:left-outlined" data-inline="false"></span></a>
+              <a href="#" class="hot-ads__figure__arrows__link"><span class="iconify" data-icon="ant-design:right-outlined" data-inline="false"></span></a>
+            </div>
+          </figure>
+          <div class="hot-ads__text">
+            <h3 class="hot-ads__title margin-bottom-sm">Title Toys TitleToys Title Toys Title Toys Title</h3>
+            <p class="hot-ads__paragraph margin-bottom-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda pariatur, eveniet iure quam a, earum corporis natus delectus nulla repellat quas! Iusto repellendus quo in quia provident, aspernatur.</p>
+            <div class="hot-ads__atb margin-bottom-md">
+              <p class="hot-ads__atb--author">By: <span class="deco-light">John Doe</span></p>
+              <p class="hot-ads__atb--brand">Brand: <span class="deco-light">ABC Toys</span></p>
+            </div>
+            <div class="hot-ads__purchase">
+              <span class="hot-ads__purchase--price">450$</span>
+              <a href="#" class="hot-ads__purchase--cart-in"><span class="iconify" data-icon="fa-solid:shopping-cart" data-inline="false"></span><span>Purchase Item</span></a>
+            </div>
           </div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
         </div>
+      </div>
+      <div class="hot-ads__arrows">
+        <a href="#" class="hot-ads__arrows__link"><span class="iconify" data-icon="bx:bxs-chevron-left" data-inline="false"></span></a>
+        <a href="#" class="hot-ads__arrows__link"><span class="iconify" data-icon="bx:bxs-chevron-right" data-inline="false"></span></a>
       </div>
     </section>
 
@@ -102,9 +109,9 @@
           <p class="products__title--description">Art Supplies & Easels, Crafts & Activities Kits, Moulding & Sculpting Kits and Scrapbooking & Paper Craft Kits.</p>
         </div>
 
-        <div class="swiper-container products__carousel">
-          <div class="swiper-wrapper products__carousel__wrapper">
-            <article class="swiper-slide products__carousel__article">
+        <div class="products__carousel">
+          <div class="products__carousel__wrapper">
+            <article class="products__carousel__article">
               <figure class="products__carousel__figure">
                 <img src="./assets/images/toys/toys-001.jpg" alt="Arts & Crafts Toy" class="products__carousel__image">
               </figure>
@@ -143,12 +150,280 @@
                 </div>
               </div>
             </article>
-
-
+            <article class="products__carousel__article">
+              <figure class="products__carousel__figure">
+                <img src="./assets/images/toys/toys-001.jpg" alt="Arts & Crafts Toy" class="products__carousel__image">
+              </figure>
+              <div class="products__carousel__text">
+                <h3 class="products__carousel__heading heading">Pretty Mini Candy Machine Pretty Mini</h3>
+                <div class="products__carousel__status">New</div>
+                <div class="products__carousel__brand">ABC Toys</div>
+                <div class="products__carousel__foot">
+                  <div class="products__carousel__foot__btn-area">
+                    <div class="products__carousel__foot__btn-area__btn">
+                      <span class="iconify" data-icon="bx:bx-plus" data-inline="false"></span>
+                    </div>
+                    <div class="products__carousel__foot__btn-area__baloon">
+                      <ul class="products__carousel__foot__btn-area__baloon__list">
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            Add to Collection
+                          </a>
+                        </li>
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            Send a Message
+                          </a>
+                        </li>
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            More Details
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="products__carousel__foot__price">
+                    45$
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="products__carousel__article">
+              <figure class="products__carousel__figure">
+                <img src="./assets/images/toys/toys-001.jpg" alt="Arts & Crafts Toy" class="products__carousel__image">
+              </figure>
+              <div class="products__carousel__text">
+                <h3 class="products__carousel__heading heading">Pretty Mini Candy Machine Pretty Mini</h3>
+                <div class="products__carousel__status">New</div>
+                <div class="products__carousel__brand">ABC Toys</div>
+                <div class="products__carousel__foot">
+                  <div class="products__carousel__foot__btn-area">
+                    <div class="products__carousel__foot__btn-area__btn">
+                      <span class="iconify" data-icon="bx:bx-plus" data-inline="false"></span>
+                    </div>
+                    <div class="products__carousel__foot__btn-area__baloon">
+                      <ul class="products__carousel__foot__btn-area__baloon__list">
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            Add to Collection
+                          </a>
+                        </li>
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            Send a Message
+                          </a>
+                        </li>
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            More Details
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="products__carousel__foot__price">
+                    45$
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="products__carousel__article">
+              <figure class="products__carousel__figure">
+                <img src="./assets/images/toys/toys-001.jpg" alt="Arts & Crafts Toy" class="products__carousel__image">
+              </figure>
+              <div class="products__carousel__text">
+                <h3 class="products__carousel__heading heading">Pretty Mini Candy Machine Pretty Mini</h3>
+                <div class="products__carousel__status">New</div>
+                <div class="products__carousel__brand">ABC Toys</div>
+                <div class="products__carousel__foot">
+                  <div class="products__carousel__foot__btn-area">
+                    <div class="products__carousel__foot__btn-area__btn">
+                      <span class="iconify" data-icon="bx:bx-plus" data-inline="false"></span>
+                    </div>
+                    <div class="products__carousel__foot__btn-area__baloon">
+                      <ul class="products__carousel__foot__btn-area__baloon__list">
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            Add to Collection
+                          </a>
+                        </li>
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            Send a Message
+                          </a>
+                        </li>
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            More Details
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="products__carousel__foot__price">
+                    45$
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="products__carousel__article">
+              <figure class="products__carousel__figure">
+                <img src="./assets/images/toys/toys-001.jpg" alt="Arts & Crafts Toy" class="products__carousel__image">
+              </figure>
+              <div class="products__carousel__text">
+                <h3 class="products__carousel__heading heading">Pretty Mini Candy Machine Pretty Mini</h3>
+                <div class="products__carousel__status">New</div>
+                <div class="products__carousel__brand">ABC Toys</div>
+                <div class="products__carousel__foot">
+                  <div class="products__carousel__foot__btn-area">
+                    <div class="products__carousel__foot__btn-area__btn">
+                      <span class="iconify" data-icon="bx:bx-plus" data-inline="false"></span>
+                    </div>
+                    <div class="products__carousel__foot__btn-area__baloon">
+                      <ul class="products__carousel__foot__btn-area__baloon__list">
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            Add to Collection
+                          </a>
+                        </li>
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            Send a Message
+                          </a>
+                        </li>
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            More Details
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="products__carousel__foot__price">
+                    45$
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="products__carousel__article">
+              <figure class="products__carousel__figure">
+                <img src="./assets/images/toys/toys-001.jpg" alt="Arts & Crafts Toy" class="products__carousel__image">
+              </figure>
+              <div class="products__carousel__text">
+                <h3 class="products__carousel__heading heading">Pretty Mini Candy Machine Pretty Mini</h3>
+                <div class="products__carousel__status">New</div>
+                <div class="products__carousel__brand">ABC Toys</div>
+                <div class="products__carousel__foot">
+                  <div class="products__carousel__foot__btn-area">
+                    <div class="products__carousel__foot__btn-area__btn">
+                      <span class="iconify" data-icon="bx:bx-plus" data-inline="false"></span>
+                    </div>
+                    <div class="products__carousel__foot__btn-area__baloon">
+                      <ul class="products__carousel__foot__btn-area__baloon__list">
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            Add to Collection
+                          </a>
+                        </li>
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            Send a Message
+                          </a>
+                        </li>
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            More Details
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="products__carousel__foot__price">
+                    45$
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="products__carousel__article">
+              <figure class="products__carousel__figure">
+                <img src="./assets/images/toys/toys-001.jpg" alt="Arts & Crafts Toy" class="products__carousel__image">
+              </figure>
+              <div class="products__carousel__text">
+                <h3 class="products__carousel__heading heading">Pretty Mini Candy Machine Pretty Mini</h3>
+                <div class="products__carousel__status">New</div>
+                <div class="products__carousel__brand">ABC Toys</div>
+                <div class="products__carousel__foot">
+                  <div class="products__carousel__foot__btn-area">
+                    <div class="products__carousel__foot__btn-area__btn">
+                      <span class="iconify" data-icon="bx:bx-plus" data-inline="false"></span>
+                    </div>
+                    <div class="products__carousel__foot__btn-area__baloon">
+                      <ul class="products__carousel__foot__btn-area__baloon__list">
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            Add to Collection
+                          </a>
+                        </li>
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            Send a Message
+                          </a>
+                        </li>
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            More Details
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="products__carousel__foot__price">
+                    45$
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="products__carousel__article">
+              <figure class="products__carousel__figure">
+                <img src="./assets/images/toys/toys-001.jpg" alt="Arts & Crafts Toy" class="products__carousel__image">
+              </figure>
+              <div class="products__carousel__text">
+                <h3 class="products__carousel__heading heading">Pretty Mini Candy Machine Pretty Mini</h3>
+                <div class="products__carousel__status">New</div>
+                <div class="products__carousel__brand">ABC Toys</div>
+                <div class="products__carousel__foot">
+                  <div class="products__carousel__foot__btn-area">
+                    <div class="products__carousel__foot__btn-area__btn">
+                      <span class="iconify" data-icon="bx:bx-plus" data-inline="false"></span>
+                    </div>
+                    <div class="products__carousel__foot__btn-area__baloon">
+                      <ul class="products__carousel__foot__btn-area__baloon__list">
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            Add to Collection
+                          </a>
+                        </li>
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            Send a Message
+                          </a>
+                        </li>
+                        <li class="products__carousel__foot__btn-area__baloon__item">
+                          <a href="#" class="products__carousel__foot__btn-area__baloon__link">
+                            More Details
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="products__carousel__foot__price">
+                    45$
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
         </div>
 
       </section>
@@ -246,44 +521,5 @@
     </div>
   </footer>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper('#hot-ads .swiper-container', {
-      cssMode: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination'
-      },
-      mousewheel: true,
-      keyboard: true,
-    });
-
-    var swiper = new Swiper('.products__carousel.swiper-container', {
-      slidesPerView: 5,
-      spaceBetween: 30,
-      freeMode: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 5,
-          spaceBetween: 50,
-        },
-      }
-    });
-  </script>
 </body>
 </html>

@@ -2,11 +2,11 @@
   background-color: $black;
   display: flex;
   padding: 1rem;
-  font-family: $deco-font-light;
   &__nav {
     flex: 1;
     display: flex;
     align-items: center;
+    font-family: $deco-font-light;
   }
   &__list {
     flex: 1;

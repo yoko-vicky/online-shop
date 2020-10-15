@@ -6,8 +6,7 @@ html {
 }
 
 body {
-  font-family: $basic-font-normal;
-  font-weight: 400;
+  font-family: $basic-font-light;
   line-height: 1.5;
   font-size: 1.5rem;
   letter-spacing: 0.2px;
@@ -31,4 +30,8 @@ body {
     font-size: 4rem;
     margin-right: 0.5rem;
   }
+}
+
+.deco-light {
+  font-family: $deco-font-light;
 }
