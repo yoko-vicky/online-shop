@@ -1,6 +1,6 @@
 .hot-ads {
   @include basicWidth;
-  padding: 20px 0;
+  padding: 2rem 0 3rem 0;
   position: relative;
   &__container {
     margin: 0 auto;
@@ -97,7 +97,7 @@
     position: absolute;
     top: 50%;
     &__link {
-      border: 1px solid $light-grey;
+      border: 1px solid $light-grey-1;
       width: 3.6rem;
       height: 3.6rem;
       border-radius: 50%;
