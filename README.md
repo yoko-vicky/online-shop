@@ -33,14 +33,13 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 ### Built With
 <!-- This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples. -->
 
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
-
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [SASS(SCSS)](https://sass-lang.com/)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ## Live Demo
 
-[Live Demo Link](https://yocosaka.github.io)
+[Live Demo Link](https://raw.githack.com/yocosaka/online-shop/shop/index.html)
 
 
 ## Getting Started
@@ -86,44 +85,22 @@ This project is [Creative Commons license of the design](https://creativecommons
 
 <!-- The [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/) requires that you give appropriate credit to the author. Therefore, you must do it in the README of your project. -->
 
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+## Author
 
 👤 **Yoko Saka**
 
 - GitHub: [@yocosaka](https://github.com/yocosaka)
 - Twitter: [@yocosaka](https://twitter.com/yocosaka)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/yokosaka)
+- LinkedIn: [Yoko Saka](https://www.linkedin.com/in/yokosaka)
 
 
 ## Acknowledgements
-<!-- * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com) -->
-
-
+* [pixabay](https://pixabay.com/)
+* [pexels](https://www.pexels.com/)
+* [rawpixel](https://www.rawpixel.com/)
+* [iconify](https://iconify.design/)
 * [Gotham Font Family for personal use](https://freefontsfamily.com/gotham-font-family/)
 * [Gotham Rounded Light for personal use](https://fontsgeek.com/fonts/Gotham-Rounded-Light)
 * [Nimbus Sans Light (Using as a alternative font of Helvetica Neue Light) ](https://fontsup.com/font/nimbus-sans-d-ot-light.html)
 * [Pragmatica Medium (Using as a alternative font of Helvetica Neue Medium) ](https://www.fontsmarket.com/font-download/pragmatica-medium)
 * [Free Sans Bold (Using as a alternative font of Helvetica Neue Bold) ](https://www.dafontfree.io/helvetica-neue-font-free/)
-* [pixabay](https://pixabay.com/)
-* [pexels](https://www.pexels.com/)
-* [rawpixel](https://www.rawpixel.com/)
-* [iconify](https://iconify.design/)
-
-<!-- Helvetica Neue Light – [Nimbus Sans Light] -->
-<!-- Helvetica Neue Free Alternatives -->

@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "stylelint": "stylelint '**/*.{css,scss}'",
+    "stylelint": "stylelint '**/*.scss'",
     "webhint": "hint ."
   },
   "devDependencies": {

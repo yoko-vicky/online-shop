@@ -1,16 +1,14 @@
 @import "abstracts/fonts";
 @import "abstracts/variables";
 @import "abstracts/mixins";
-
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
-@import "base/animations";
-
 @import "components/form";
 @import "components/header";
 @import "components/footer";
 @import "components/search-area";
-
+@import "components/basic-figure";
+@import "components/basic-purchase";
 @import "components/hot-ads";
 @import "components/products";

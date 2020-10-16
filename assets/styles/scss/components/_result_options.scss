@@ -1,0 +1,100 @@
+.result__options {
+  width: 100%;
+  max-width: 40rem;
+  transform: translateX(-40rem);
+  transition: all 0.4s;
+  position: absolute;
+  z-index: 1000;
+
+  @include mq(laptap) {
+    position: relative;
+    transform: none;
+    max-width: 24rem;
+  }
+
+  &.active {
+    transform: translateX(0);
+    box-shadow: 0 0 1rem rgba($black, 0.2);
+  }
+
+  &__container {
+    padding: 4rem;
+
+    @include mq(laptap) {
+      padding: 3rem;
+    }
+  }
+
+  &__item {
+    margin-bottom: 1rem;
+  }
+
+  &__element {
+    margin-bottom: 2rem;
+
+    &:first-child {
+      display: flex;
+
+      .result__options__item {
+        flex: 1;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 1.7rem;
+    font-family: $basic-font-bold;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid $light-grey-1;
+    margin-bottom: 1.2rem;
+
+    @include mq(tab) {
+      font-size: 1.4rem;
+    }
+  }
+
+  .checkbox-input {
+    display: none;
+  }
+
+  .checkbox-label {
+    position: relative;
+    cursor: pointer;
+    padding: 3px 3px 3px 3rem;
+    font-size: 1.7rem;
+
+    @include mq(tab) {
+      font-size: 1.5rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 2.3rem;
+      height: 2.3rem;
+      transform: translateY(-50%);
+      background-color: $white;
+      border: 1px solid $light-grey-1;
+      border-radius: 2px;
+
+      @include mq(tab) {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+  }
+
+  .checkbox-input-text {
+    background: $white;
+    width: 5rem;
+    padding-top: 2px;
+    border-radius: 2px;
+    margin-left: 1rem;
+    text-align: center;
+    font-size: 1.7rem;
+    border: 1px solid $light-grey-1;
+  }
+}

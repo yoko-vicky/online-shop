@@ -1,31 +1,38 @@
 .search-area {
-  background-color: $color-primary;
   padding: 6rem 0 4rem 0;
+  background-color: $color-primary;
+
   &__container {
     @include basicWidth;
   }
+
   &__heading {
     margin: 0 auto 5rem;
     text-align: center;
     font-family: $deco-font-light;
     line-height: 1.1;
+
     &--main {
       display: block;
       font-size: 5rem;
       margin-bottom: 0.2rem;
     }
+
     &--sub {
       color: $white;
       font-size: 1.7rem;
     }
   }
+
   &__form {
     display: flex;
     flex-direction: column;
+
     @include mq(tab) {
       flex-direction: row;
     }
   }
+
   &__select,
   &__input,
   &__button {
@@ -35,24 +42,30 @@
     background-color: $white;
     font-family: inherit;
   }
+
   &__select,
   &__input {
     margin-bottom: 1px;
+
     @include mq(tab) {
       margin-bottom: 0;
       margin-right: 1px;
     }
   }
+
   &__select {
     padding: 1.5rem 1.5rem 1.5rem 2.4rem;
     flex: 0 0 20%;
+
     @include mq(xs) {
       padding: 1.5rem 1.5rem 1.5rem 3rem;
     }
   }
+
   &__input {
     padding: 1.5rem;
   }
+
   &__button {
     display: flex;
     justify-content: center;
@@ -61,6 +74,7 @@
     color: $white;
     font-size: 1.7rem;
     padding: 1.6rem;
+
     @include mq(tab) {
       width: 36rem;
       margin-left: 2rem;

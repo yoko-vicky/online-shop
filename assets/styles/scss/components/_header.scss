@@ -1,18 +1,21 @@
 .main-header {
   background-color: $black;
+
   &__container {
     display: flex;
+
     @include basicWidth;
+
     padding: 1rem 0;
-    @include mq(tab) {
-    }
   }
+
   &__nav {
     flex: 1;
     display: flex;
     align-items: center;
     font-family: $deco-font-light;
   }
+
   &__list {
     flex: 1;
     display: flex;
@@ -21,21 +24,26 @@
     @include mq(xs) {
       justify-content: space-around;
     }
+
     @include mq(tab) {
       justify-content: space-evenly;
     }
+
     @include mq(laptap) {
       justify-content: flex-start;
     }
   }
+
   &__item {
     &:last-child {
       display: none;
     }
+
     @include mq(tab) {
       &:not(:last-child) {
         margin: 0 1rem;
       }
+
       &:last-child {
         display: block;
         background-color: $color-primary;
@@ -44,40 +52,55 @@
       }
     }
   }
+
   &__link {
     text-transform: uppercase;
     color: $white;
     display: flex;
     align-items: center;
     padding: 1rem;
+
     @include mq(xs) {
       padding: 0;
     }
+
     @include mq(tab) {
       font-size: 1.3rem;
     }
+
     .iconify {
       margin-right: 0.5rem;
+
       @include mq(xs) {
         display: none;
       }
     }
+
+    &.active {
+      color: $color-primary;
+    }
   }
+
   &__user-info {
     display: none;
+
     @include mq(laptap) {
       display: flex;
       align-items: center;
+
       &__mail {
         position: relative;
         margin-right: 2rem;
+
         a {
           display: flex;
         }
+
         .iconify {
           color: $white;
           font-size: 3rem;
         }
+
         .mail-num {
           display: flex;
           justify-content: center;
@@ -92,6 +115,7 @@
           font-size: 1rem;
         }
       }
+
       &__name {
         a {
           color: $white;
@@ -99,11 +123,13 @@
           font-size: 1.3rem;
         }
       }
+
       &__icon {
         width: 4rem;
         height: 4rem;
         border-radius: 50%;
         overflow: hidden;
+
         &--img {
           width: 100%;
           object-fit: cover;

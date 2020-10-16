@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Gotham";
-  src: url("../../fonts/Gotham-Font/Gotham-Bold.otf") format("opentype"),
+  src:
+    url("../../fonts/Gotham-Font/Gotham-Bold.otf") format("opentype"),
     url("../../fonts/Gotham-Font/GothamBold.ttf") format("truetype");
   font-weight: 700;
 }
@@ -28,7 +29,8 @@
 // Free Sans Bold (Using as a alternative font of Helvetica Neue Bold)
 @font-face {
   font-family: "Free Sans Bold";
-  src: url("../../fonts/Free-Sans/FreeSansBold.otf") format("opentype"),
+  src:
+    url("../../fonts/Free-Sans/FreeSansBold.otf") format("opentype"),
     url("../../fonts/Free-Sans/FreeSansBold.ttf") format("truetype");
   font-weight: 700;
 }
