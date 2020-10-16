@@ -28,11 +28,16 @@ p {
   display: flex;
   align-items: center;
   font-size: 2.8rem;
-  margin-right: 1rem;
+  margin: 0 1rem 0 0;
   .iconify {
     color: $color-primary;
     font-size: 4rem;
     margin-right: 0.5rem;
+  }
+  &--link {
+    display: flex;
+    align-items: center;
+    color: $white;
   }
 }
 

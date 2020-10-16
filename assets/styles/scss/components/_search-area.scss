@@ -8,6 +8,7 @@
     margin: 0 auto 5rem;
     text-align: center;
     font-family: $deco-font-light;
+    line-height: 1.1;
     &--main {
       display: block;
       font-size: 5rem;
@@ -53,9 +54,13 @@
     padding: 1.5rem;
   }
   &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $black;
     color: $white;
-    padding: 1.5rem;
+    font-size: 1.7rem;
+    padding: 1.6rem;
     @include mq(tab) {
       width: 36rem;
       margin-left: 2rem;

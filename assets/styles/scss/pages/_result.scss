@@ -1,0 +1,9 @@
+.search-area {
+  padding: 3rem 0;
+  &__heading {
+    text-align: left;
+    &--main {
+      font-size: 4rem;
+    }
+  }
+}

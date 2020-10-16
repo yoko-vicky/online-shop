@@ -4,24 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TOYZ Online Store</title>
-  <!-- Normalize.css CDN -->
+  <!-- NORMALIZE CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-  <!-- Iconify -->
+  <!-- ICONIFY -->
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-  <!-- Custom CSS -->
+  <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="./assets/styles/css/styles.css">
 </head>
 <body class="home">
 
+  <!-- HEADER -->
   <header class="main-header">
     <div class="main-header__container">
-      <a href="#" class="main-header__logo heading-brand">
-        <span class="iconify" data-icon="cil:baby" data-inline="false"></span>
-        TOYZ
-      </a>
+      <h1 class="main-header__logo heading-brand">
+        <a href="/" class="heading-brand--link">
+          <span class="iconify" data-icon="cil:baby" data-inline="false"></span>
+          TOYZ
+        </a>
+      </h1>
       <nav class="main-header__nav">
         <ul class="main-header__list">
-          <li class="main-header__item"><a href="#" class="main-header__link"><span class="iconify" data-icon="bx:bxs-home" data-inline="false"></span>Home</a></li>
+          <li class="main-header__item"><a href="/" class="main-header__link"><span class="iconify" data-icon="bx:bxs-home" data-inline="false"></span>Home</a></li>
           <li class="main-header__item"><a href="#" class="main-header__link"><span class="iconify" data-icon="fa-solid:box-open" data-inline="false"></span>Corrections</a></li>
           <li class="main-header__item"><a href="#" class="main-header__link"><span class="iconify" data-icon="fa-solid:shopping-cart" data-inline="false"></span>Cart</a></li>
           <li class="main-header__item"><a href="#" class="main-header__link">Post an Ad</a></li>
@@ -43,14 +46,16 @@
       </div>
     </div>
   </header>
+
+  <!-- MAIN -->
   <main>
     <!-- SEARCH AREA -->
     <div class="search-area">
       <div class="search-area__container">
-        <h1 class="search-area__heading heading">
+        <h2 class="search-area__heading">
           <span class="search-area__heading--main heading-brand">TOYZ</span>
           <span class="search-area__heading--sub">Buying And Selling Couldn't be Simpler than this!</span>
-         </h1>
+        </h2>
         <form action="#" class="search-area__form">
           <select name="categories" id="" class="search-area__select">
             <option value="arts_crafts">Arts & Crafts</option>
@@ -70,7 +75,8 @@
           </select>
           <input type="text" placeholder="What do you search for?" class="search-area__input">
           <input type="text" placeholder="Which brand do you want?" class="search-area__input">
-          <button type="submit" class="search-area__button">Search</button>
+          <!-- <button type="submit" class="search-area__button">Search</button> -->
+          <a href="result.html" class="search-area__button">Search</a>
         </form>
       </div>
     </div>
@@ -1142,11 +1148,13 @@
         </div>
       </section>
     </div>
-
   </main>
+
+  <!-- FOOTER -->
   <footer class="main-footer">
     <div class="main-footer__navigations">
       <div class="main-footer__wrapper">
+        <!-- FOOTER ELEMENT 1 -->
         <div class="main-footer__element">
           <a href="#" class="main-footer__logo heading-brand">
             <span class="iconify" data-icon="cil:baby" data-inline="false"></span>
@@ -1156,6 +1164,7 @@
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus vero possimus nihil, facilis aliquam omnis consequuntur eligendi doloribus praesentium, odit minus rem aperiam ipsum recusandae dolores sequi est. Quos, incidunt.
                 </p>
         </div>
+        <!-- FOOTER ELEMENT 2 -->
         <div class="main-footer__element">
           <h5 class="main-footer__title">Categories</h5>
           <div class="main-footer__list__container">
@@ -1179,6 +1188,7 @@
             </ul>
           </div>
         </div>
+        <!-- FOOTER ELEMENT 3 -->
         <div class="main-footer__element">
           <h5 class="main-footer__title">Navigation</h5>
           <div class="main-footer__list__container">
@@ -1192,8 +1202,9 @@
             </ul>
           </div>
         </div>
+        <!-- FOOTER ELEMENT 4 -->
         <div class="main-footer__element main-footer__selects">
-
+          <!-- FOOTER SELECT COUNTRY -->
           <div class="main-footer__selects__item">
             <h5 class="main-footer__title">Country</h5>
             <select name="country" id="country" class="main-footer__selects__item__select">
@@ -1203,7 +1214,7 @@
               <option value="Japan" class="main-footer__option">Japan</option>
             </select>
           </div>
-
+          <!-- FOOTER SELECT LANGUAGE  -->
           <div class="main-footer__selects__item">
             <h5 class="main-footer__title">Language</h5>
             <select name="language" id="language" class="main-footer__selects__item__select">
@@ -1213,7 +1224,7 @@
               <option value="Japan" class="main-footer__option">Japanese</option>
             </select>
           </div>
-
+          <!-- FOOTER SELECT CURRENCY -->
           <div class="main-footer__selects__item">
             <h5 class="main-footer__title">Currency</h5>
             <select name="currency" id="currency" class="main-footer__selects__item__select">
@@ -1226,7 +1237,7 @@
         </div>
       </div>
     </div>
-
+    <!-- COPYRIGHT -->
     <div class="copyright">
       <div class="main-footer__wrapper">
         <div class="copyright__main">
