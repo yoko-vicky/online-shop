@@ -10,6 +10,8 @@
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="./assets/styles/css/styles-result.css">
+  <!-- FAVICON -->
+  <link rel="shortcut icon" type="image/png" href="./assets/images/fav.png">
 </head>
 <body class="result">
 
@@ -74,7 +76,7 @@
             <option value="trains_vehicles">Trains & Vehicles</option>
           </select>
           <input type="text" placeholder="What do you search for?" class="search-area__input">
-          <input type="text" placeholder="Which brand do you want?" class="search-area__input">
+          <input type="text" placeholder="Which brand do you want?" value="XXX" class="search-area__input">
           <button type="submit" class="search-area__button">Search</button>
         </form>
       </div>
@@ -449,16 +451,5 @@
     </div>
   </footer>
 
-  <!-- SCRIPTS -->
-  <script>
-    (function () {
-      var btn = document.querySelector('.result__button');
-      baloonBtn.addEventListener('click', displayOptions)
-    })();
-    function displayOptions(e){
-      var options = document.querySelector('.result__options');
-      options.classList.toggle('active');
-    }
-  </script>
 </body>
 </html>

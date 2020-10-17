@@ -2,18 +2,36 @@
 
 ## About the Project
 
-![screenshot](./screenshot.jpg)
+![Top Page Screenshot](./screenshot-top.png)
+![Search Result Page Screenshot](./screenshot-results.png)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
+This project is based on an online shop for electronics.
+Instead of that content, I built an online shop for kids' toys with 2 pages as below:
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+- the main page (search page), with a link to the results page: index.html
+- the search results page: results.html
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
+Each of these pages has versions for mainly 2 different screen sizes
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+- mobile: up to 768px
+- tablet & desktop: from 768px
+
+Plus, I added 4 breakpoints to these pages
+
+- tiny mobile: up to 420px
+- small mobile: from 460px
+- laptop: from 960px
+- large desktop: from 1200px
+
+I followed the guidelines of the given design, including:
+
+- colors
+- typographies: font face, size, and weight
+- layout: composition and space between elements, for the 2 given screen sizes
+
+Please note that some fonts face are used as alternative fonts of Helvetica Neue Light, Medium, and bold because they are not available for free.
+
+A list of commonly used resources that I find helpful is listed in the acknowledgments.
 
 
 ## Table of Contents
@@ -26,12 +44,11 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 * [Contributing](#contributing)
 * [Show your support](#show-your-support)
 * [License](#license)
-* [Authors](#authors)
+* [Author](#author)
 * [Acknowledgements](#acknowledgements)
 
 
 ### Built With
-<!-- This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples. -->
 
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
 * [SASS(SCSS)](https://sass-lang.com/)
@@ -81,9 +98,8 @@ Give a ⭐️ if you like this project!
 
 ## License
 
-This project is [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/) licensed.
+["ZATTIX"](https://www.behance.net/gallery/24796463/ZATTIX) design idea [Mohammed Awad on Behance](https://www.behance.net/M_Awad) is licensed under [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/) licensed.
 
-<!-- The [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/) requires that you give appropriate credit to the author. Therefore, you must do it in the README of your project. -->
 
 ## Author
 
@@ -101,6 +117,6 @@ This project is [Creative Commons license of the design](https://creativecommons
 * [iconify](https://iconify.design/)
 * [Gotham Font Family for personal use](https://freefontsfamily.com/gotham-font-family/)
 * [Gotham Rounded Light for personal use](https://fontsgeek.com/fonts/Gotham-Rounded-Light)
-* [Nimbus Sans Light (Using as a alternative font of Helvetica Neue Light) ](https://fontsup.com/font/nimbus-sans-d-ot-light.html)
-* [Pragmatica Medium (Using as a alternative font of Helvetica Neue Medium) ](https://www.fontsmarket.com/font-download/pragmatica-medium)
-* [Free Sans Bold (Using as a alternative font of Helvetica Neue Bold) ](https://www.dafontfree.io/helvetica-neue-font-free/)
+* [Nimbus Sans Light](https://fontsup.com/font/nimbus-sans-d-ot-light.html)
+* [Pragmatica Medium](https://www.fontsmarket.com/font-download/pragmatica-medium)
+* [Free Sans Bold](https://www.dafontfree.io/helvetica-neue-font-free/)

@@ -97,4 +97,16 @@
     font-size: 1.7rem;
     border: 1px solid $light-grey-1;
   }
+
+  .checkbox-input:checked + .checkbox-label::after {
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 2px;
+    width: 13px;
+    height: 6px;
+    border-left: 2px solid $color-primary;
+    border-bottom: 2px solid $color-primary;
+    transform: rotate(-45deg);
+  }
 }

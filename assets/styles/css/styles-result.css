@@ -976,6 +976,20 @@ button:hover {
   border: 1px solid #ccc;
 }
 
+.result__options .checkbox-input:checked + .checkbox-label::after {
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 2px;
+  width: 13px;
+  height: 6px;
+  border-left: 2px solid #d35266;
+  border-bottom: 2px solid #d35266;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
 .basic-figure {
   position: relative;
   height: 28rem;
