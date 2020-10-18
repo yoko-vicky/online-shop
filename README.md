@@ -2,8 +2,8 @@
 
 ## About the Project
 
-![Top Page Screenshot](./screenshot-top.png)
-![Search Result Page Screenshot](./screenshot-results.png)
+![Top Page Screenshot](./screenshot_top.png)
+![Search Result Page Screenshot](./screenshot_results.png)
 
 This project is based on an online shop for electronics.
 Instead of that content, I built an online shop for kids' toys with 2 pages as below:
