@@ -1222,6 +1222,13 @@ button:hover {
   align-items: center;
   color: #777;
   cursor: pointer;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.products__carousel__foot__btn-area__btn .iconify {
+  position: relative;
+  z-index: -1;
 }
 
 .products__carousel__foot__btn-area__baloon {

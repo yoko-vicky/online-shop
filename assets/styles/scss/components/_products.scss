@@ -196,6 +196,13 @@
           align-items: center;
           color: $grey;
           cursor: pointer;
+          z-index: 1;
+          background-color: transparent;
+
+          .iconify {
+            position: relative;
+            z-index: -1;
+          }
         }
 
         &__baloon {
