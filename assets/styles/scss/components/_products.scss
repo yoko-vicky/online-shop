@@ -114,6 +114,7 @@
       margin-bottom: 3rem;
       position: relative;
       z-index: 1;
+      padding-bottom: 4.5rem;
 
       @include mq(mob) {
         margin-bottom: 0;
@@ -153,7 +154,7 @@
     }
 
     &__text {
-      padding: 1rem;
+      padding: 1rem 1rem 0 1rem;
     }
 
     &__image {
@@ -180,9 +181,12 @@
     &__foot {
       width: 100%;
       display: flex;
+      padding: 0 1rem 1rem 1rem;
       justify-content: space-between;
       align-items: center;
       margin-top: 0.5rem;
+      position: absolute;
+      bottom: 0;
 
       &__btn-area {
         position: relative;

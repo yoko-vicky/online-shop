@@ -40,7 +40,6 @@ A list of commonly used resources that I find helpful is listed in the acknowled
   * [Built With](#built-with)
 * [Live Demo](#live-demo)
 * [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
 * [Contributing](#contributing)
 * [Show your support](#show-your-support)
 * [License](#license)
@@ -61,23 +60,8 @@ A list of commonly used resources that I find helpful is listed in the acknowled
 
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
-
-Install dependencies:
-
-```
-npm install
-```
-
-or 
-
-```
-yarn install
-```
-
-### Prerequisites
-
-- Npm install or yarn install is required to make new commits.
+Just clone this repo and open index.html file in your browser then you are good to go.
+To get a local copy up and running, clone the repo.
 
 
 ## Contributing
