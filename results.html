@@ -451,5 +451,16 @@
     </div>
   </footer>
 
+  <script>
+    function activeSideNav() {
+      var btn = document.querySelector('.result__button')
+      btn.addEventListener('click', e=>{
+          var options = document.querySelector('.result__options')
+          options.classList.toggle('active')
+      })
+    }
+    activeSideNav()
+  </script>
+
 </body>
 </html>

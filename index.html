@@ -1010,12 +1010,15 @@
   </footer>
 
   <script>
-    const btns = document.querySelectorAll('.products__carousel__foot__btn-area__btn')
-    btns.forEach(btn=>{
-        btn.addEventListener('click',e=>{
-          btn.parentElement.childNodes[3].classList.toggle('active')
-        });
-    })
+    function activeBaloon(params) {
+      const btns = document.querySelectorAll('.products__carousel__foot__btn-area__btn')
+      btns.forEach(btn=>{
+          btn.addEventListener('click',e=>{
+            btn.parentElement.childNodes[3].classList.toggle('active')
+          });
+      })
+    }
+    activeBaloon()
   </script>
 
 </body>
