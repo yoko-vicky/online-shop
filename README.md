@@ -67,7 +67,7 @@ To get a local copy up and running follow these simple example steps.
 3. Copy the project URL as displayed.
 4. If you're running the Windows Operating System, open your command prompt. On Linux, Open your terminal. 
 5. Change the current working directory to the location where you want the cloned directory to be made. Leave as it is if the current location is where you want the project to be. 
-6. Type git clone, and then paste the URL you copied in Step 3. 
+6. Type git clone, and then paste the URL you copied in Step 3. <br>
 e.g. $ git clone https://github.com/yourUsername/yourProjectName 
 7. Press Enter. Your local copy will be created. 
 
