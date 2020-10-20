@@ -8,8 +8,8 @@
 This project is based on an online shop for electronics.
 Instead of that content, I built an online shop for kids' toys with 2 pages as below:
 
-- the main page (search page), with a link to the results page: [index.html](https://raw.githack.com/yocosaka/online-shop/shop/index.html)
-- the search results page: [results.html](https://raw.githack.com/yocosaka/online-shop/shop/results.html)
+- the main page (search page), with a link to the results page: [index.html](https://yocosaka-online-shop.netlify.app/)
+- the search results page: [results.html](https://yocosaka-online-shop.netlify.app/results.html)
 
 Each of these pages has versions for mainly 2 different screen sizes
 
