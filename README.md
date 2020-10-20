@@ -55,7 +55,7 @@ A list of commonly used resources that I find helpful is listed in the acknowled
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/yocosaka/online-shop/shop/index.html)
+[Live Demo Link](https://yocosaka-online-shop.netlify.app/)
 
 
 ## Getting Started
