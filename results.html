@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOYZ Online Store</title>
+  <!-- NORMALIZE CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+  <!-- ICONIFY -->
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="./assets/styles/css/styles-result.css">
+  <!-- FAVICON -->
+  <link rel="shortcut icon" type="image/png" href="./assets/images/fav.png">
+</head>
+<body class="result">
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="main-header__container">
+      <h1 class="main-header__logo heading-brand">
+        <a href="/" class="heading-brand--link">
+          <span class="iconify" data-icon="cil:baby" data-inline="false"></span>
+          TOYZ
+        </a>
+      </h1>
+      <nav class="main-header__nav">
+        <ul class="main-header__list">
+          <li class="main-header__item"><a href="/" class="main-header__link"><span class="iconify" data-icon="bx:bxs-home" data-inline="false"></span>Home</a></li>
+          <li class="main-header__item"><a href="#" class="main-header__link"><span class="iconify" data-icon="fa-solid:box-open" data-inline="false"></span>Corrections</a></li>
+          <li class="main-header__item"><a href="#" class="main-header__link"><span class="iconify" data-icon="fa-solid:shopping-cart" data-inline="false"></span>Cart</a></li>
+          <li class="main-header__item"><a href="#" class="main-header__link">Post an Ad</a></li>
+        </ul>
+      </nav>
+      <div class="main-header__user-info">
+        <div class="main-header__user-info__mail">
+          <a href="#">
+            <span class="iconify" data-icon="heroicons-solid:mail" data-inline="false"></span>
+            <span class="mail-num">5</span>
+          </a>
+        </div>
+        <div class="main-header__user-info__name">
+          <a href="#">Hanako Yamada</a>
+        </div>
+        <div class="main-header__user-info__icon">
+          <a href="#" class="main-header__user-info__icon--link"><img src="./assets/images/user.jpg" alt="User Icon" class="main-header__user-info__icon--img"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- SEARCH AREA -->
+    <div class="search-area">
+      <div class="search-area__container">
+        <h2 class="search-area__heading heading">
+          <span class="search-area__heading--main heading-brand">TOYZ</span>
+          <span class="search-area__heading--sub">Search around 124,000 Items are waiting to be sold!</span>
+        </h2>
+        <form action="#" class="search-area__form">
+          <select name="categories" class="search-area__select">
+            <option value="arts_crafts">Arts & Crafts</option>
+            <option value="baby_toddler">Baby & Toddler</option>
+            <option value="collectibles">Collectibles</option>
+            <option value="construction_toys">Construction Toys</option>
+            <option value="dolls_dollhouses">Dolls & Dollhouses</option>
+            <option value="fashion_accessories">Fashion & Accessories</option>
+            <option value="figures_sets">Figures & Sets</option>
+            <option value="games">Games</option>
+            <option value="home_learning">Home Learning</option>
+            <option value="loot_bag_toys">Loot Bag Toys</option>
+            <option value="musical_toys">Musical Toys</option>
+            <option value="outdoor_active_play">Outdoor & Active Play</option>
+            <option value="puzzles_brainteasers">Puzzles & Brainteasers</option>
+            <option value="trains_vehicles">Trains & Vehicles</option>
+          </select>
+          <input type="text" placeholder="What do you search for?" class="search-area__input">
+          <input type="text" placeholder="Which brand do you want?" value="XXX" class="search-area__input">
+          <button type="submit" class="search-area__button">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- RESULT CONTAINER -->
+    <div class="result__container">
+      <div class="result__button">
+        <span class="iconify" data-icon="bx:bxs-hand-right" data-inline="false"></span> Want to add search options? Just <span>click here</span>!
+      </div>
+      <div class="result__options">
+        <form class="result__options__container">
+          <div class="result__options__element">
+            <div class="result__options__item">
+              <input type="checkbox" name="status" value="New" id="checkbox-01" class="checkbox-input">
+              <label for="checkbox-01" class="checkbox-label">New</label>
+            </div>
+            <div class="result__options__item">
+              <input type="checkbox" name="status" value="Used" id="checkbox-02" class="checkbox-input">
+              <label for="checkbox-02" class="checkbox-label">Used</label>
+            </div>
+          </div>
+          <div class="result__options__element">
+            <h5 class="heading result__options__title">
+              Author
+            </h5>
+            <div class="result__options__item">
+              <input type="checkbox" name="status" value="John Doe" id="checkbox-03" class="checkbox-input">
+              <label for="checkbox-03" class="checkbox-label">John Doe</label>
+            </div>
+            <div class="result__options__item">
+              <input type="checkbox" name="status" value="Alex Sandra" id="checkbox-04" class="checkbox-input">
+              <label for="checkbox-04" class="checkbox-label">Alex Sandra</label>
+            </div>
+            <div class="result__options__item">
+              <input type="checkbox" name="status" value="Tony Diablo" id="checkbox-05" class="checkbox-input">
+              <label for="checkbox-05" class="checkbox-label">Tony Diablo</label>
+            </div>
+          </div>
+          <div class="result__options__element">
+            <h5 class="heading result__options__title">
+              Age
+            </h5>
+            <div class="result__options__item">
+              <input type="checkbox" name="status" value="Baby" id="checkbox-06" class="checkbox-input">
+              <label for="checkbox-06" class="checkbox-label">Baby</label>
+            </div>
+            <div class="result__options__item">
+              <input type="checkbox" name="status" value="Age1_3" id="checkbox-07" class="checkbox-input">
+              <label for="checkbox-07" class="checkbox-label">1 - 3 years</label>
+            </div>
+            <div class="result__options__item">
+              <input type="checkbox" name="status" value="Age4_5" id="checkbox-08" class="checkbox-input">
+              <label for="checkbox-08" class="checkbox-label">4 - 5 years</label>
+            </div>
+            <div class="result__options__item">
+              <input type="checkbox" name="status" value="Age4_5" id="checkbox-21" class="checkbox-input">
+              <label for="checkbox-21" class="checkbox-label">4 - 5 years</label>
+            </div>
+            <div class="result__options__item">
+              <input type="checkbox" name="status" value="Age5_7" id="checkbox-22" class="checkbox-input">
+              <label for="checkbox-22" class="checkbox-label">5 - 7 years</label>
+            </div>
+            <div class="result__options__item">
+              <input type="checkbox" name="status" value="Age8_10" id="checkbox-23" class="checkbox-input">
+              <label for="checkbox-23" class="checkbox-label">8 - 10 years</label>
+            </div>
+            <div class="result__options__item">
+              <input type="checkbox" name="status" value="Age_over11" id="checkbox-24" class="checkbox-input">
+              <label for="checkbox-24" class="checkbox-label">11+ years</label>
+            </div>
+            <div class="result__options__item">
+              <input type="checkbox" name="status" value="age_other" id="checkbox-25" class="checkbox-input">
+              <label for="checkbox-25" class="checkbox-label">Others</label>
+              <input type="text" placeholder="12" class="checkbox-input-text">
+            </div>
+          </div>
+          <div class="result__options__element">
+            <h5 class="heading result__options__title">
+              Price Range
+            </h5>
+            <div class="result__options__item">
+              <input type="checkbox" name="status" value="price_30_50" id="checkbox-09" class="checkbox-input">
+              <label for="checkbox-09" class="checkbox-label">30$ - 50$</label>
+            </div>
+            <div class="result__options__item">
+              <input type="checkbox" name="status" value="price_50_100" id="checkbox-10" class="checkbox-input">
+              <label for="checkbox-10" class="checkbox-label">50$ - 100$</label>
+            </div>
+            <div class="result__options__item">
+              <input type="checkbox" name="status" value="price_100_300" id="checkbox-11" class="checkbox-input">
+              <label for="checkbox-11" class="checkbox-label">100$ - 300$</label>
+            </div>
+            <div class="result__options__item">
+              <input type="checkbox" name="status" value="price_over300" id="checkbox-31" class="checkbox-input">
+              <label for="checkbox-31" class="checkbox-label">+300$</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="result__catalogue">
+        <div class="result__catalogue__description">
+          <p class="result__catalogue__description--text">138 Results for "<span>XXX</span>" Search Produced by <span>ABC Toys</span> in Category <span>Arts & Crafts</span></p>
+        </div>
+        <div class="result__catalogue__articles">
+          <article class="result__catalogue__article">
+            <div class="result__catalogue__article__wrapper">
+              <figure class="basic-figure">
+                <img src="./assets/images/toys/toys-038.jpg" class="basic-figure__image" alt="Result Catalogue Image">
+                <div class="basic-figure__arrows">
+                  <a href="#" class="basic-figure__arrows__link"><span class="iconify" data-icon="ant-design:left-outlined" data-inline="false"></span></a>
+                  <a href="#" class="basic-figure__arrows__link"><span class="iconify" data-icon="ant-design:right-outlined" data-inline="false"></span></a>
+                </div>
+              </figure>
+              <div class="result__catalogue__text">
+                <h2 class="heading result__catalogue__heading margin-bottom-xs">Frog Brothers</h2>
+                <p class="result__catalogue__status margin-bottom-sm">New</p>
+                <p class="result__catalogue__paragraph margin-bottom-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, explicabo sequi soluta illum qui vitae voluptate. Ad laudantium laborum vitae expedita corrupti culpa veniam.</p>
+                <p class="result__catalogue__brand margin-bottom-sm">
+                  <span>Brand:</span> ABC Toys Factory
+                </p>
+                <div class="result__catalogue__foot">
+                  <div class="result__catalogue__foot__date">16 Oct, 2020</div>
+                  <div class="result__catalogue__foot__call">
+                    <div class="basic-purchase">
+                      <span class="basic-purchase--price">30$</span>
+                      <a href="#" class="basic-purchase--cart-in"><span class="iconify" data-icon="fa-solid:shopping-cart" data-inline="false"></span><span>Purchase Item</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="result__catalogue__article">
+            <div class="result__catalogue__article__wrapper">
+              <figure class="basic-figure">
+                <img src="./assets/images/toys/toys-037.jpg" class="basic-figure__image" alt="Result Catalogue Image">
+                <div class="basic-figure__arrows">
+                  <a href="#" class="basic-figure__arrows__link"><span class="iconify" data-icon="ant-design:left-outlined" data-inline="false"></span></a>
+                  <a href="#" class="basic-figure__arrows__link"><span class="iconify" data-icon="ant-design:right-outlined" data-inline="false"></span></a>
+                </div>
+              </figure>
+              <div class="result__catalogue__text">
+                <h2 class="heading result__catalogue__heading margin-bottom-xs">Angel Colorful Ornament</h2>
+                <p class="result__catalogue__status margin-bottom-sm">Used</p>
+                <p class="result__catalogue__paragraph margin-bottom-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, explicabo sequi soluta illum qui vitae voluptate. Ad laudantium laborum vitae expedita corrupti culpa veniam.</p>
+                <p class="result__catalogue__brand margin-bottom-sm">
+                  <span>Brand:</span> ABC Toys Factory
+                </p>
+                <div class="result__catalogue__foot">
+                  <div class="result__catalogue__foot__date">16 Oct, 2020</div>
+                  <div class="result__catalogue__foot__call">
+                    <div class="basic-purchase">
+                      <a href="#" class="basic-purchase--give-call">Give a Call</a>
+                    </div>
+                    <div class="basic-purchase">
+                      <span class="basic-purchase--price">100$</span>
+                      <a href="#" class="basic-purchase--cart-in"><span class="iconify" data-icon="fa-solid:shopping-cart" data-inline="false"></span><span>Purchase Item</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="result__catalogue__article">
+            <div class="result__catalogue__article__wrapper">
+              <figure class="basic-figure">
+                <img src="./assets/images/toys/toys-036.jpg" class="basic-figure__image" alt="Result Catalogue Image">
+                <div class="basic-figure__arrows">
+                  <a href="#" class="basic-figure__arrows__link"><span class="iconify" data-icon="ant-design:left-outlined" data-inline="false"></span></a>
+                  <a href="#" class="basic-figure__arrows__link"><span class="iconify" data-icon="ant-design:right-outlined" data-inline="false"></span></a>
+                </div>
+              </figure>
+              <div class="result__catalogue__text">
+                <h2 class="heading result__catalogue__heading margin-bottom-xs">Plane Colorful Ornament</h2>
+                <p class="result__catalogue__status margin-bottom-sm">New</p>
+                <p class="result__catalogue__paragraph margin-bottom-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, explicabo sequi soluta illum qui vitae voluptate. Ad laudantium laborum vitae expedita corrupti culpa veniam.</p>
+                <p class="result__catalogue__brand margin-bottom-sm">
+                  <span>Brand:</span> ABC Toys Factory
+                </p>
+                <div class="result__catalogue__foot">
+                  <div class="result__catalogue__foot__date">16 Oct, 2020</div>
+                  <div class="result__catalogue__foot__call">
+                    <div class="basic-purchase">
+                      <span class="basic-purchase--price">50$</span>
+                      <a href="#" class="basic-purchase--cart-in"><span class="iconify" data-icon="fa-solid:shopping-cart" data-inline="false"></span><span>Purchase Item</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="result__catalogue__article">
+            <div class="result__catalogue__article__wrapper">
+              <figure class="basic-figure">
+                <img src="./assets/images/toys/toys-030.jpg" class="basic-figure__image" alt="Result Catalogue Image">
+                <div class="basic-figure__arrows">
+                  <a href="#" class="basic-figure__arrows__link"><span class="iconify" data-icon="ant-design:left-outlined" data-inline="false"></span></a>
+                  <a href="#" class="basic-figure__arrows__link"><span class="iconify" data-icon="ant-design:right-outlined" data-inline="false"></span></a>
+                </div>
+              </figure>
+              <div class="result__catalogue__text">
+                <h2 class="heading result__catalogue__heading margin-bottom-xs">Yellow vehicle</h2>
+                <p class="result__catalogue__status margin-bottom-sm">New</p>
+                <p class="result__catalogue__paragraph margin-bottom-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, explicabo sequi soluta illum qui vitae voluptate. Ad laudantium laborum vitae expedita corrupti culpa veniam.</p>
+                <p class="result__catalogue__brand margin-bottom-sm">
+                  <span>Brand:</span> ABC Toys Factory
+                </p>
+                <div class="result__catalogue__foot">
+                  <div class="result__catalogue__foot__date">16 Oct, 2020</div>
+                  <div class="result__catalogue__foot__call">
+                    <div class="basic-purchase">
+                      <a href="#" class="basic-purchase--give-call">Give a Call</a>
+                    </div>
+                    <div class="basic-purchase">
+                      <span class="basic-purchase--price">200$</span>
+                      <a href="#" class="basic-purchase--cart-in"><span class="iconify" data-icon="fa-solid:shopping-cart" data-inline="false"></span><span>Purchase Item</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="result__catalogue__article">
+            <div class="result__catalogue__article__wrapper">
+              <figure class="basic-figure">
+                <img src="./assets/images/toys/toys-031.jpg" class="basic-figure__image" alt="Result Catalogue Image">
+                <div class="basic-figure__arrows">
+                  <a href="#" class="basic-figure__arrows__link"><span class="iconify" data-icon="ant-design:left-outlined" data-inline="false"></span></a>
+                  <a href="#" class="basic-figure__arrows__link"><span class="iconify" data-icon="ant-design:right-outlined" data-inline="false"></span></a>
+                </div>
+              </figure>
+              <div class="result__catalogue__text">
+                <h2 class="heading result__catalogue__heading margin-bottom-xs">Happy Colorful Sweets Clay Kit</h2>
+                <p class="result__catalogue__status margin-bottom-sm">Used</p>
+                <p class="result__catalogue__paragraph margin-bottom-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, explicabo sequi soluta illum qui vitae voluptate. Ad laudantium laborum vitae expedita corrupti culpa veniam.</p>
+                <p class="result__catalogue__brand margin-bottom-sm">
+                  <span>Brand:</span> ABC Toys Factory
+                </p>
+                <div class="result__catalogue__foot">
+                  <div class="result__catalogue__foot__date">16 Oct, 2020</div>
+                  <div class="result__catalogue__foot__call">
+                    <div class="basic-purchase">
+                      <span class="basic-purchase--price">70$</span>
+                      <a href="#" class="basic-purchase--cart-in"><span class="iconify" data-icon="fa-solid:shopping-cart" data-inline="false"></span><span>Purchase Item</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <!-- PAGINATION -->
+    <div class="result__pagination">
+      <div class="result__pagination__container">
+        <a href="#" class="result__pagination__item result__pagination__link">1</a>
+        <a href="#" class="result__pagination__item result__pagination__link active">2</a>
+        <a href="#" class="result__pagination__item result__pagination__link">3</a>
+        <a href="#" class="result__pagination__item result__pagination__link">4</a>
+        <span class="result__pagination__item">...</span>
+        <a href="#" class="result__pagination__item result__pagination__link">7</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="main-footer__navigations">
+      <div class="main-footer__wrapper">
+        <!-- FOOTER ELEMENT 1 -->
+        <div class="main-footer__element">
+          <a href="#" class="main-footer__logo heading-brand">
+            <span class="iconify" data-icon="cil:baby" data-inline="false"></span>
+            TOYZ
+          </a>
+          <p class="main-footer__paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus vero possimus nihil, facilis aliquam omnis consequuntur eligendi doloribus praesentium, odit minus rem aperiam ipsum recusandae dolores sequi est. Quos, incidunt.
+                </p>
+        </div>
+        <!-- FOOTER ELEMENT 2 -->
+        <div class="main-footer__element">
+          <h5 class="main-footer__title">Categories</h5>
+          <div class="main-footer__list__container">
+            <ul class="main-footer__list">
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Arts & Crafts</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Baby & Toddler</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Collectibles</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Construction</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Dolls & Dollhouses</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Fashion & Accessories</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Figures & Sets</a></li>
+            </ul>
+            <ul class="main-footer__list">
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Games</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Home Learning</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Loot Bag Toys</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Musical Toys</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Outdoor & Active Play</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Puzzles & Brainteasers</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Trains & Vehicles</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- FOOTER ELEMENT 3 -->
+        <div class="main-footer__element">
+          <h5 class="main-footer__title">Navigation</h5>
+          <div class="main-footer__list__container">
+            <ul class="main-footer__list">
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Home</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Sign In</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Sign Up</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Terms & Conditions</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">FAQ</a></li>
+              <li class="main-footer__item"><a href="#" class="main-footer__link">Help</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- FOOTER ELEMENT 4 -->
+        <div class="main-footer__element main-footer__selects">
+          <!-- FOOTER SELECT COUNTRY -->
+          <div class="main-footer__selects__item">
+            <h5 class="main-footer__title">Country</h5>
+            <select name="country" id="country" class="main-footer__selects__item__select">
+              <option value="us" class="main-footer__option">U.S.</option>
+              <option value="Sweden" class="main-footer__option">Sweden</option>
+              <option value="Sweden" class="main-footer__option">Italy</option>
+              <option value="Japan" class="main-footer__option">Japan</option>
+            </select>
+          </div>
+          <!-- FOOTER SELECT LANGUAGE  -->
+          <div class="main-footer__selects__item">
+            <h5 class="main-footer__title">Language</h5>
+            <select name="language" id="language" class="main-footer__selects__item__select">
+              <option value="us" class="main-footer__option">English</option>
+              <option value="Sweden" class="main-footer__option">Swedish</option>
+              <option value="Sweden" class="main-footer__option">Italy</option>
+              <option value="Japan" class="main-footer__option">Japanese</option>
+            </select>
+          </div>
+          <!-- FOOTER SELECT CURRENCY -->
+          <div class="main-footer__selects__item">
+            <h5 class="main-footer__title">Currency</h5>
+            <select name="currency" id="currency" class="main-footer__selects__item__select">
+              <option value="Sweden" class="main-footer__option">USD</option>
+              <option value="Sweden" class="main-footer__option">SEK</option>
+              <option value="us" class="main-footer__option">EURO</option>
+              <option value="Japan" class="main-footer__option">YEN</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- COPYRIGHT -->
+    <div class="copyright">
+      <div class="main-footer__wrapper">
+        <div class="copyright__main">
+          Copyright &copy; 2020 TOYZ All Rights Reserved. Built by <a href="https://github.com/yocosaka/online-shop">Yoko Saka</a>
+        </div>
+        <div class="copyright__sns">
+          <ul class="copyright__sns__list">
+            <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="bx:bxl-facebook" data-inline="false"></span></a></li>
+            <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="ant-design:twitter-outlined" data-inline="false"></span></a></li>
+            <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify" data-icon="ant-design:youtube-filled" data-inline="false"></span></a></li>
+            <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify instagram" data-icon="entypo-social:instagram" data-inline="false"></span></a></li>
+            <li class="copyright__sns__item"><a href="#" class="copyright__sns__link"><span class="iconify linkedin" data-icon="bx:bxl-linkedin" data-inline="false"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function activeSideNav() {
+      var btn = document.querySelector('.result__button')
+      btn.addEventListener('click', e=>{
+          var options = document.querySelector('.result__options')
+          options.classList.toggle('active')
+      })
+    }
+    activeSideNav()
+  </script>
+
+</body>
+</html>

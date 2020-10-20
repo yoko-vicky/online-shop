@@ -1,0 +1,64 @@
+.search-area {
+  padding: 3rem 0;
+
+  &__heading {
+    text-align: left;
+
+    &--main {
+      font-size: 4rem;
+    }
+  }
+}
+
+.result {
+  background-color: $light-grey-2;
+
+  &__container {
+    border-right: 1px solid $light-grey-1;
+    border-left: 1px solid $light-grey-1;
+    position: relative;
+
+    @include mq(laptap) {
+      @include basicWidth;
+
+      display: flex;
+    }
+  }
+
+  &__button {
+    background-color: rgba($color-primary, 0.3);
+    box-shadow: 0 0 1rem rgba($black, 0.2);
+    padding: 2rem 0;
+    cursor: pointer;
+    color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+
+    .iconify {
+      margin-right: 1rem;
+      font-size: 1.8rem;
+    }
+
+    span {
+      font-family: $basic-font-bold;
+      margin: 0 4px;
+      line-height: 1;
+    }
+
+    @include mq(laptap) {
+      display: none;
+    }
+  }
+
+  &__options {
+    background-color: $light-grey-2;
+  }
+
+  &__catalogue {
+    @include mq(laptap) {
+      flex: 1;
+    }
+  }
+}

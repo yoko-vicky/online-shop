@@ -1,0 +1,28 @@
+.basic-purchase {
+  max-width: 30rem;
+  background-color: $color-primary;
+  border-radius: 0.2rem;
+  display: flex;
+
+  &--price {
+    color: $white;
+    border-right: 1px solid $grey;
+    padding: 0 3.5rem;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &--cart-in {
+    color: $white;
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .iconify {
+      margin-right: 1.3rem;
+    }
+  }
+}

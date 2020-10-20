@@ -1,0 +1,33 @@
+.result__pagination {
+  padding: 3rem 0 8rem 0;
+  align-items: center;
+  border-top: 1px solid $light-grey-1;
+
+  &__container {
+    max-width: 30rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  &__link {
+    border: 1px solid $light-grey-1;
+    background-color: $white;
+    padding: 0.3rem 1rem;
+    font-size: 1.8rem;
+    border-radius: 3px;
+    color: $grey;
+    transition: all 0.4s;
+    display: flex;
+    align-items: center;
+
+    &:hover,
+    &.active {
+      background-color: $color-primary;
+      color: $white;
+      border-color: $color-primary;
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.basic-figure {
+  position: relative;
+  height: 28rem;
+  overflow: hidden;
+
+  @include mq(mob) {
+    height: 40rem;
+  }
+
+  @include mq(tab) {
+    height: 23rem;
+    flex: 0 0 32rem;
+    margin-right: 3rem;
+  }
+
+  @include mq(laptap) {
+    height: 14rem;
+    flex: 0 0 18rem;
+  }
+
+  @include mq(lg) {
+    height: 20rem;
+    flex: 0 0 26rem;
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    max-width: 120%;
+    object-fit: cover;
+  }
+
+  &__arrows {
+    position: absolute;
+    background-color: rgba($black, 0.8);
+    width: 8rem;
+    height: 3rem;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__link {
+      display: flex;
+    }
+
+    .iconify {
+      color: $color-primary;
+      font-size: 2rem;
+    }
+  }
+}
