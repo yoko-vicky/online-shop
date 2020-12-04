@@ -1,9 +1,8 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
-## About the Project
-
+# Toy's online shop
 ![Top Page Screenshot](./screenshot_top.png)
 ![Search Result Page Screenshot](./screenshot_results.png)
+
+## About the Project
 
 This project is based on an online shop for electronics.
 Instead of that content, I built an online shop for kids' toys with 2 pages as below:
@@ -33,6 +32,12 @@ Please note that some fonts face are used as alternative fonts of Helvetica Neue
 
 A list of commonly used resources that I find helpful is listed in the acknowledgments.
 
+### Built With
+
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [SASS(SCSS)](https://sass-lang.com/)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
 
 ## Table of Contents
 
@@ -40,18 +45,12 @@ A list of commonly used resources that I find helpful is listed in the acknowled
   * [Built With](#built-with)
 * [Live Demo](#live-demo)
 * [Getting Started](#getting-started)
+* [Author](#author)
 * [Contributing](#contributing)
 * [Show your support](#show-your-support)
 * [License](#license)
-* [Author](#author)
 * [Acknowledgements](#acknowledgements)
 
-
-### Built With
-
-* [HTML5](https://en.wikipedia.org/wiki/HTML5)
-* [SASS(SCSS)](https://sass-lang.com/)
-* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ## Live Demo
 
@@ -72,6 +71,15 @@ e.g. $ git clone https://github.com/yourUsername/yourProjectName
 7. Press Enter. Your local copy will be created. 
 
 
+## Author
+
+👤 **Yoko Saka**
+
+- GitHub: [@yocosaka](https://github.com/yocosaka)
+- Twitter: [@yocosaka](https://twitter.com/yocosaka)
+- LinkedIn: [Yoko Saka](https://www.linkedin.com/in/yokosaka)
+
+
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -88,18 +96,10 @@ Feel free to check the [issues page](../../issues).
 
 Give a ⭐️ if you like this project!
 
+
 ## License
 
 ["ZATTIX"](https://www.behance.net/gallery/24796463/ZATTIX) design idea [Mohammed Awad on Behance](https://www.behance.net/M_Awad) is licensed under [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/) licensed.
-
-
-## Author
-
-👤 **Yoko Saka**
-
-- GitHub: [@yocosaka](https://github.com/yocosaka)
-- Twitter: [@yocosaka](https://twitter.com/yocosaka)
-- LinkedIn: [Yoko Saka](https://www.linkedin.com/in/yokosaka)
 
 
 ## Acknowledgements
